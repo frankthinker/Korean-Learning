@@ -2,9 +2,11 @@
 import { practice_beg_001 } from './beg_001.js';
 import { practice_beg_002 } from './beg_002.js';
 import { practice_beg_003 } from './beg_003.js';
+import { practice_beg_004 } from './beg_004.js';
 
 export const beginnerPracticeDatabase = {
   beg_001: practice_beg_001,
   beg_002: practice_beg_002,
-  beg_003: practice_beg_003
+  beg_003: practice_beg_003,
+  beg_004: practice_beg_004
 };
