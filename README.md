@@ -46,7 +46,7 @@ npm install
 
 ### 开发模式（推荐方式）
 ```bash
-python scripts/launch_dev.py
+python scripts/dev.py
 ```
 脚本将自动：
 - 启动开发服务器（端口5176）
