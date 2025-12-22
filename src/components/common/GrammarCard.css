@@ -170,6 +170,18 @@
   font-weight: 600;
 }
 
+.not-learned-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .learn-btn {
   padding: 4px 10px;
   background-color: var(--accent-color);

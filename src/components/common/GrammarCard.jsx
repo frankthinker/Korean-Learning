@@ -57,11 +57,10 @@ function GrammarCard({ grammar, level, onSelect }) {
       </div>
 
       <div className="card-footer">
-        {isLearned && <span className="learned-badge">✓ 已掌握</span>}
-        {!isLearned && (
-          <button className="learn-btn" onClick={handleMarkAsLearned}>
-            标记为已掌握
-          </button>
+        {isLearned ? (
+          <span className="learned-badge">✓ 已掌握</span>
+        ) : (
+          <span className="not-learned-badge">未掌握</span>
         )}
         <span className="view-btn">查看详情 →</span>
       </div>
