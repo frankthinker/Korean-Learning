@@ -2,5 +2,5 @@
 import { beginnerPracticeDatabase } from './beginner/index.js';
 
 export const practiceDatabase = {
-  beginner: beginnerPracticeDatabase
+  beginner: beginnerPracticeDatabase,
 };
