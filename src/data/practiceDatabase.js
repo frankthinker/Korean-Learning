@@ -18,7 +18,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '진술문에서 경어로 말할 때 "-습니다"를 사용합니다.',
+        explanation: '【敬语陈述句】当你要用正式、礼貌的方式陈述一件事情时，动词后面要加"-습니다"。比如这里"봤다"（看了）变成"봤습니다"，表示"我昨天看了电影"这个陈述，用的是正式敬语。',
         source: 'TOPIK Level 1'
       },
       {
@@ -44,7 +44,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '과거 사건을 경어로 말할 때 "-었습니다"를 사용합니다.',
+        explanation: '【过去式敬语陈述】表达已经发生的事情时，要用"-었습니다"。这里"가르치다"（教）的过去式是"가르쳤다"，再加上敬语"습니다"变成"가르쳤습니다"，意思是"老师教了学生"，既表示过去，又表示尊敬。',
         source: 'TOPIK Level 1'
       },
       {
@@ -55,9 +55,9 @@ export const practiceDatabase = {
           { text: '습니까', correct: true },
           { text: '습니다', correct: false },
           { text: '어요', correct: false },
-          { text: '아요', correct: false }
+          { text: '아요', correct: true }
         ],
-        explanation: '의문문에서 경어로 물어볼 때 "-습니까"를 사용합니다.',
+        explanation: '【形容词疑问句】问天气如何时，"좋다"（好）的敬语疑问形式是"좋습니까?"。意思是"今天天气好吗？"，是非常礼貌的问法。后接"아요"也可以，不那么礼貌。',
         source: 'TOPIK Level 1'
       },
       {
@@ -70,7 +70,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '진술문에서 경어로 말할 때 "-습니다"(여기서는 입니다)를 사용합니다.',
+        explanation: '【名词敬语陈述】当主语后面直接跟名词时，用"입니다"（是"-습니다"的特殊形式）。"학생이다"（是学生）变成"학생입니다"，表示"我是学生"，这是最正式礼貌的说法。',
         source: 'TOPIK Level 1'
       },
       {
@@ -96,7 +96,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '과거 사건을 경어로 진술할 때 "-습니다"를 사용합니다.',
+        explanation: '【过去式敬语陈述】"읽다"（读）的过去式"읽었다"加上敬语"습니다"变成"읽었습니다"，意思是"读了这本书"。注意过去式"-었-"和敬语"-습니다"可以组合使用，表示对过去事件的正式陈述。',
         source: 'TOPIK Level 1'
       },
       {
@@ -109,7 +109,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '의문문에서 경어로 물어볼 때 "-습니까"를 사용합니다.',
+        explanation: '【过去式疑问句】问"吃了什么"时，"먹었다"（吃了）+"습니까?"="먹었습니까?"，表示对过去事情的礼貌提问。',
         source: 'TOPIK Level 1'
       },
       {
@@ -135,7 +135,7 @@ export const practiceDatabase = {
           { text: '어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '의문문에서 경어로 물어볼 때 "-습니까"(여기서는 십니까)를 사용합니다.',
+        explanation: '【时间疑问句】问"什么时候回来"时，"돌아오다"（回来）的敬语疑问形式是"돌아오십니까?"。用"십니까"比普通的"습니까"更尊敬，适用于对长辈。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -151,7 +151,7 @@ export const practiceDatabase = {
           { text: '을 거예요', correct: false },
           { text: '습니다', correct: false }
         ],
-        explanation: '진행 중인 동작을 나타낼 때 "-고 있다"를 사용합니다.',
+        explanation: '【现在进行时】"-고 있다"表示"正在做某事"，相当于英语的"be doing"。"먹다"（吃）+"고 있다"="먹고 있다"（正在吃），"먹고 있어요"是礼貌形式，表示"我现在正在吃饭"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -164,7 +164,7 @@ export const practiceDatabase = {
           { text: '을 겁니다', correct: false },
           { text: '습니다', correct: false }
         ],
-        explanation: '"지금 비가 오는 중"이라는 의미로 "-고 있다"를 사용합니다.',
+        explanation: '【进行中的状态】"-고 있다"不仅表示动作，也表示持续的状态。"오다"（来、下）+"고 있다"="오고 있다"（正在下），"비가 오고 있습니다"表示"雨正在下"，强调此刻雨正下着。',
         source: 'TOPIK Level 1'
       },
       {
@@ -177,7 +177,7 @@ export const practiceDatabase = {
           { text: '을 거야', correct: false },
           { text: '어', correct: false }
         ],
-        explanation: '진행 중인 동작을 표현할 때 "-고 있다"를 사용합니다.',
+        explanation: '【动作进行中】"-고 있다"的非敬语形式是"-고 있어"，用于平辈或关系亲密的人之间。"읽다"（读）+"고 있어"="읽고 있어"（正在读），表示"英熙正在看书"，语气比较随意。',
         source: 'TOPIK Level 1'
       },
       {
@@ -190,7 +190,7 @@ export const practiceDatabase = {
           { text: '겠습니다', correct: false },
           { text: '습니다', correct: false }
         ],
-        explanation: '현재 진행 중인 동작을 나타낼 때 "-고 있다"를 사용합니다.',
+        explanation: '【敬语进行时】当想说"学生们正在踢球"时，用"하고 있습니다"（非常正式）。这里强调动作正在进行，且用敬语说明场合比较正式。',
         source: 'TOPIK Level 1'
       },
       {
@@ -203,7 +203,7 @@ export const practiceDatabase = {
           { text: '겠어요', correct: false },
           { text: '아요', correct: false }
         ],
-        explanation: '지금 진행 중인 상태를 표현할 때 "-고 있다"를 사용합니다.',
+        explanation: '【当下正在发生】"-고 있어요"是"-고 있다"的礼貌形式，用于日常对话。"보다"（看）+"고 있어요"="보고 있어요"，"TV를 보고 있어요"表示"孩子正在看电视"，是此刻正在进行的事。',
         source: 'TOPIK Level 1'
       },
       {
@@ -216,7 +216,7 @@ export const practiceDatabase = {
           { text: '실 겁니다', correct: false },
           { text: '십니다', correct: false }
         ],
-        explanation: '현재 진행 중인 동작을 나타낼 때 "-고 있다"를 사용합니다.',
+        explanation: '【正式场合进行时】"대답하다"（回答）+"고 있습니다"="대답하고 있습니다"，表示"老师正在回答问题"。用于描述正在发生的事，语气非常正式。',
         source: 'TOPIK Level 1'
       },
       {
@@ -229,7 +229,7 @@ export const practiceDatabase = {
           { text: '을 거야', correct: false },
           { text: '어', correct: false }
         ],
-        explanation: '진행 중인 동작을 비격식체로 표현할 때 "-고 있다"를 사용합니다.',
+        explanation: '【非正式进行时】和朋友说话时用"-고 있어"这种简短形式。"듣다"（听）+"고 있어"="듣고 있어"，"음악을 듣고 있어"表示"朋友正在听音乐"，语气轻松随意。',
         source: 'TOPIK Level 1'
       },
       {
@@ -255,7 +255,7 @@ export const practiceDatabase = {
           { text: '을 거예요', correct: false },
           { text: '어요', correct: false }
         ],
-        explanation: '지금 일어나고 있는 동작을 표현할 때 "-고 있다"를 사용합니다.',
+        explanation: '【实时动作描述】"-고 있다"可以描述此刻正在发生的任何动作。"짖다"（叫）+"고 있어요"="짖고 있어요"，"개가 짖고 있어요"表示"狗正在叫"，是对眼前情况的实时描述。',
         source: 'TOPIK Level 1'
       },
       {
@@ -268,7 +268,7 @@ export const practiceDatabase = {
           { text: '겠습니다', correct: false },
           { text: '니다', correct: false }
         ],
-        explanation: '현재 진행 중인 동작을 나타낼 때 "-고 있다"를 사용합니다.',
+        explanation: '【学习场景进行时】"하다"（做）+"고 있습니다"="하고 있습니다"，表示"学生正在做作业"。这是对学习过程的正式描述。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -284,7 +284,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"물"은 받침이 있으므로 목적어 조사 "을"을 사용합니다.',
+        explanation: '【有收音用"을"】韩语中表示动作对象（宾语）时用"을/를"。"물"（水）最后一个字有收音（ㄹ），所以用"을"。规则：有收音→"을"，无收音→"를"。"물을 마신다"=喝水。',
         source: 'TOPIK Level 1'
       },
       {
@@ -297,7 +297,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"책"은 받침이 있으므로 목적어 조사 "을"을 사용합니다.',
+        explanation: '【收音判断法】"책"（书）的"ㄱ"是收音，所以用"을"不用"를"。判断方法：看名词最后一个字有没有底下的辅音，有就用"을"。"책을 읽다"=读书。',
         source: 'TOPIK Level 1'
       },
       {
@@ -310,7 +310,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"친구"는 받침이 없으므로 목적어 조사 "를"을 사용합니다.',
+        explanation: '【无收音用"를"】"친구"（朋友）最后一个字"구"没有收音，所以用"를"。规则很简单：听起来元音结尾的词用"를"，辅音结尾的词用"을"。"친구를 만나다"=见朋友。',
         source: 'TOPIK Level 1'
       },
       {
@@ -323,7 +323,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"밥"은 받침이 있으므로 목적어 조사 "을"을 사용합니다.',
+        explanation: '【有收音的例子】"밥"（饭）的"ㅂ"就是收音，所以用"을"。记忆方法：韩语字有三层，最下面那层就是收音。"밥을 먹다"=吃饭，是最常用的说法。',
         source: 'TOPIK Level 1'
       },
       {
@@ -336,7 +336,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"커피"는 받침이 없으므로 목적어 조사 "를"을 사용합니다.',
+        explanation: '【外来词判断】"커피"（coffee）是外来词，最后一个字"피"没收音，用"를"。外来词通常以元音结尾，所以多数用"를"。"커피를 마시다"=喝咖啡。',
         source: 'TOPIK Level 1'
       },
       {
@@ -349,7 +349,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"음악"은 받침이 있으므로 목적어 조사 "을"을 사용합니다.',
+        explanation: '【收音再举例】"음악"（音乐）的最后一个字"악"有"ㄱ"这个收音，所以用"을"。只要看最后一个字的第三层有没有字母就行。"음악을 듣다"=听音乐。',
         source: 'TOPIK Level 1'
       },
       {
@@ -362,7 +362,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"사과"는 받침이 없으므로 목적어 조사 "를"을 사용합니다.',
+        explanation: '【无收音例子】"사과"（苹果）最后是"과"，元音结尾，没有收音，用"를"。水果名字大多无收音，多数用"를"。"사과를 먹다"=吃苹果。',
         source: 'TOPIK Level 1'
       },
       {
@@ -375,7 +375,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"영화"는 받침이 없으므로 목적어 조사 "를"을 사용합니다.',
+        explanation: '【外来词经典例】"영화"（电影，film）最后是"화"，无收音，用"를"。记住：大部分娱乐类词汇都是无收音。"영화를 보다"=看电影，非常常用！',
         source: 'TOPIK Level 1'
       },
       {
@@ -388,7 +388,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"우유"는 받침이 없으므로 목적어 조사 "를"을 사용합니다.',
+        explanation: '【饮料类词汇】"우유"（牛奶）最后是"유"，无收音，用"를"。饮料名称大多是外来词或无收音，所以常用"를"。"우유를 마시다"=喝牛奶。',
         source: 'TOPIK Level 1'
       },
       {
@@ -401,7 +401,7 @@ export const practiceDatabase = {
           { text: '이', correct: false },
           { text: '가', correct: false }
         ],
-        explanation: '"문"은 받침이 있으므로 목적어 조사 "을"을 사용합니다.',
+        explanation: '【收音最后例】"문"（门）有"ㄴ"收音，用"을"。这个规则100%准确，看到收音就用"을"，没收音就用"를"。"문을 열다"=开门。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -417,7 +417,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"고양이"는 받침이 없으므로 주어 조사 "가"를 사용합니다.',
+        explanation: '【主语标记：无收音用"가"】韩语中主语用"이/가"标记。"고양이"（猫）最后是"이"，无收音，用"가"。与宾语"을/를"规则一样：无收音→"가"。"고양이가 있다"=有猫。',
         source: 'TOPIK Level 1'
       },
       {
@@ -430,7 +430,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"개"는 받침이 없으므로 주어 조사 "가"를 사용합니다.',
+        explanation: '【动物主语】"개"（狗）无收音，用"가"。当主语是做动作的人/物时，必须用主语助词。"개가 짖다"=狗叫，这里狗是发出叫声的主体。',
         source: 'TOPIK Level 1'
       },
       {
@@ -443,7 +443,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"누"는 받침이 없으므로 주어 조사 "가"를 사용합니다.',
+        explanation: '【疑问代词主语】"누"（谁）无收音，用"가"。疑问句中也要加主语助词，"누가 왔어요?"=谁来了？在问人物时必须用"가"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -456,7 +456,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"뭐"는 받침이 없으므로 주어 조사 "가"를 사용합니다.',
+        explanation: '【疑问词主语】"뭐"（什么）无收音，用"가"。"뭐가 필요하다"=需要什么，这里"什么"是被需要的主体，所以用主语助词"가"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -469,7 +469,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"책"은 받침이 있으므로 주어 조사 "이"를 사용합니다.',
+        explanation: '【有收音用"이"】"책"（书）有"ㄱ"收音，用"이"。主语助词规则：有收音→"이"，无收音→"가"。"책이 있다"=有书，书是存在的主体。',
         source: 'TOPIK Level 1'
       },
       {
@@ -482,7 +482,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"학생"은 받침이 있으므로 주어 조사 "이"를 사용합니다.',
+        explanation: '【专有名词主语】"학생"（学生）有"ㄴ"收音，用"이"。人物称呼很多都有收音，所以常用"이"。"학생이 공부하다"=学生学习。',
         source: 'TOPIK Level 1'
       },
       {
@@ -495,7 +495,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"비"는 받침이 없으므로 주어 조사 "가"를 사용합니다.',
+        explanation: '【天气主语】"비"（雨）无收音，用"가"。天气现象做主语时也必须加助词。"비가 오다"=下雨，雨是动作的主体。',
         source: 'TOPIK Level 1'
       },
       {
@@ -508,7 +508,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"문"은 받침이 있으므로 주어 조사 "이"를 사용합니다.',
+        explanation: '【状态主语】"문"（门）有"ㄴ"收音，用"이"。这里门处于"开着"的状态，门是状态的主体。"문이 열려 있다"=门开着。',
         source: 'TOPIK Level 1'
       },
       {
@@ -521,7 +521,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"선생님"은 받침이 있으므로 주어 조사 "이"를 사용합니다.',
+        explanation: '【敬称主语】"선생님"（老师）有"ㅁ"收音，用"이"。尊称后也要加主语助词。"선생님이 오신다"=老师来了，这里用了敬语动词"오시다"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -534,7 +534,7 @@ export const practiceDatabase = {
           { text: '를', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '"사람"은 받침이 있으므로 주어 조사 "이"를 사용합니다.',
+        explanation: '【数量主语】"사람"（人）有"ㅁ"收音，用"이"。表示数量多少时也要用主语助词。"사람이 많다"=人多，形容人数量大。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -550,7 +550,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '고 있어요', correct: false }
         ],
-        explanation: '상황을 설명하거나 배경을 제시할 때 "-는데요"를 사용합니다.',
+        explanation: '【背景说明】"-는데요"用来说明当前情况或背景，常带有转折语气。"시간이 없는데요"=没有时间呀（暗示：所以不能....）。这是日常对话中非常常用的说法！',
         source: 'TOPIK Level 1'
       },
       {
@@ -576,7 +576,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '거든요', correct: false }
         ],
-        explanation: '현재 상태를 설명할 때 "-는데요"를 사용합니다.',
+        explanation: '【状态背景】"-는데요"可表达当前状态。"바빠는데요"=很忙呀（语气柔和，暗示可能拒绝请求）。比直接说"바빠요"更委婉礼貌。',
         source: 'TOPIK Level 1'
       },
       {
@@ -589,7 +589,7 @@ export const practiceDatabase = {
           { text: '어서', correct: false },
           { text: '니까', correct: false }
         ],
-        explanation: '"만약 모를 경우"를 나타낼 때 "-거든"을 사용합니다.',
+        explanation: '【假设条件】"-거든"表达假设条件。"모르거든 물어보세요"=如果不知道的话就问吧。相当于"만약....라면"（如果...）。',
         source: 'TOPIK Level 1'
       },
       {
@@ -602,7 +602,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '거든요', correct: false }
         ],
-        explanation: '상황을 설명할 때 "-는데요"를 사용합니다.',
+        explanation: '【情况铺垫】"-는데요"常用来铺垫后文。"피곤하는데요"=好累呀（暗示：想休息/不想做某事）。这种表达方式很地道，韩国人天天用！',
         source: 'TOPIK Level 1'
       },
       {
@@ -615,7 +615,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '거든요', correct: false }
         ],
-        explanation: '현재 상태를 설명할 때 "-는데요"를 사용합니다.',
+        explanation: '【转折背景】"-는데요"常带转折意味。"늦었는데요"=晚了呀（暗示：抱歉/可能不能去了）。这比直接说"늦었어요"更有礼貌。',
         source: 'TOPIK Level 1'
       },
       {
@@ -628,7 +628,7 @@ export const practiceDatabase = {
           { text: '어서', correct: false },
           { text: '니까', correct: false }
         ],
-        explanation: '조건을 나타낼 때 "-거든"을 사용합니다.',
+        explanation: '【条件建议】"-거든"用于给建议。"좋아하거든 사 주세요"=如果喜欢的话就买给他吧。表达"如果满足某条件，就..."。',
         source: 'TOPIK Level 1'
       },
       {
@@ -641,7 +641,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '거든요', correct: false }
         ],
-        explanation: '상황 설명을 할 때 "-는데요"를 사용합니다.',
+        explanation: '【情况说明】"-는데요"可说明之前的情况。"몰랐는데요"=（之前）不知道呀（表示惊讶或抱歉）。常用来软化语气。',
         source: 'TOPIK Level 1'
       },
       {
@@ -654,7 +654,7 @@ export const practiceDatabase = {
           { text: '어서', correct: false },
           { text: '니까', correct: false }
         ],
-        explanation: '조건을 나타낼 때 "-거든"을 사용합니다.',
+        explanation: '【需求条件】"-거든"表达需求条件。"필요하거든 말하세요"=如果需要的话就说。用于提供帮助或服务的场景。',
         source: 'TOPIK Level 1'
       },
       {
@@ -667,7 +667,7 @@ export const practiceDatabase = {
           { text: '습니다', correct: false },
           { text: '거든요', correct: false }
         ],
-        explanation: '상황을 설명할 때 "-는데요"를 사용합니다.',
+        explanation: '【否定背景】"-는데요"表达不行的情况。"안 되는데요"=不行呀（婉转拒绝，比直接说"안 돼"更礼貌）。是韩语中非常地道的拒绝方式。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -678,7 +678,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '엄마___편지를 썼습니다.',
         correctAnswers: ['에게'],
-        explanation: '동작의 대상이 되는 사람을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【对象助词"에게"】表示动作的接受对象（给谁）时用"에게"。"엄마에게 편지를 쓰다"=给妈妈写信。"에게"只用于人或动物，不能用于物品。',
         source: 'TOPIK Level 1'
       },
       {
@@ -691,7 +691,7 @@ export const practiceDatabase = {
           { text: '와', correct: false },
           { text: '에', correct: false }
         ],
-        explanation: '질문하는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【提问对象】向某人提问时用"에게"。"선생님에게 물었다"=向老师提问。表示"问谁"这个对象，必须用"에게"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -699,7 +699,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '아버지___선물을 드렸습니다.',
         correctAnswers: ['에게'],
-        explanation: '선물을 주는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【赠送对象】给某人礼物时用"에게"。"아버지에게 선물을 드리다"=给父亲送礼物。这里"드리다"是"주다"（给）的敬语形式。',
         source: 'TOPIK Level 1'
       },
       {
@@ -712,7 +712,7 @@ export const practiceDatabase = {
           { text: '친구와의 동반', correct: false },
           { text: '친구가 동작의 주체', correct: false }
         ],
-        explanation: '"에게"는 동작을 받는 대상을 나타냅니다.',
+        explanation: '【动作承受者】"에게"标记接受动作的对象。"친구에게 물었다"=问了朋友，朋友是被问的对象（不是提问者）。理解这个很关键！',
         source: 'TOPIK Level 1'
       },
       {
@@ -720,7 +720,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '동생___도움을 받았습니다.',
         correctAnswers: ['에게'],
-        explanation: '도움을 받는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【帮助来源】从某人那里得到帮助时用"에게"。"동생에게 도움을 받다"=从弟弟/妹妹那里得到帮助。表示帮助的来源对象。',
         source: 'TOPIK Level 1'
       },
       {
@@ -728,7 +728,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '할머니___전화를 했습니다.',
         correctAnswers: ['에게'],
-        explanation: '전화를 거는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【通话对象】给某人打电话时用"에게"。"할머니에게 전화를 하다"=给奶奶打电话。表示电话的接听对象。',
         source: 'TOPIK Level 1'
       },
       {
@@ -741,7 +741,7 @@ export const practiceDatabase = {
           { text: '나는 친구와 책을 빌렸습니다.', correct: false },
           { text: '나는 친구에 책을 빌렸습니다.', correct: false }
         ],
-        explanation: '"에게"는 대상을 나타내는 조사입니다.',
+        explanation: '【对象助词用法】"에게"专门用于标记人或动物作为对象。"친구에게 책을 빌리다"=从朋友那里借书。不能说"친구을"或"친구와"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -749,7 +749,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '모든 사람___존댓말을 합니다.',
         correctAnswers: ['에게'],
-        explanation: '존댓말을 하는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【敬语对象】对某人说敬语时用"에게"。"모든 사람에게 존댓말을 하다"=对所有人说敬语。表示敬语的使用对象。',
         source: 'TOPIK Level 1'
       },
       {
@@ -757,7 +757,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '손님___따뜻한 물을 제공합니다.',
         correctAnswers: ['에게'],
-        explanation: '물을 제공하는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【提供对象】向某人提供东西时用"에게"。"손님에게 따뜻한 물을 제공하다"=给客人提供温水。表示接受服务的对象。',
         source: 'TOPIK Level 1'
       },
       {
@@ -765,7 +765,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '의사___진료를 받습니다.',
         correctAnswers: ['에게'],
-        explanation: '진료를 받는 대상을 나타낼 때 "에게"를 사용합니다.',
+        explanation: '【医疗对象】从某人那里接受诊疗时用"에게"。"의사에게 진료를 받다"=从医生那里接受诊疗。表示医疗服务的提供者。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -781,7 +781,7 @@ export const practiceDatabase = {
           { text: '으면', correct: false },
           { text: '지만', correct: false }
         ],
-        explanation: '"고"는 두 동작을 순서대로 나열할 때 사용합니다.',
+        explanation: '【顺序连接词"-고"】"고"表示两个动作按顺序发生。"밥을 먹고 학교에 가다"=先吃饭，然后去学校。相当于中文的"然后"或英文的"and then"。',
         source: 'TOPIK Level 1'
       },
       {
@@ -794,7 +794,7 @@ export const practiceDatabase = {
           { text: '으면', correct: false },
           { text: '기', correct: false }
         ],
-        explanation: '두 동작을 순서대로 나열할 때 "고"를 사용합니다.',
+        explanation: '【顺序列举】用"-고"连接两个按时间顺序发生的动作。"책을 읽고 숙제를 하다"=先读书，再做作业。注意：不能同时进行，必须有先后顺序。',
         source: 'TOPIK Level 1'
       },
       {
@@ -815,7 +815,7 @@ export const practiceDatabase = {
           { text: '원인을 나타냄', correct: false },
           { text: '조건을 나타냄', correct: false }
         ],
-        explanation: '"고"는 동작을 순서대로 나열합니다.',
+        explanation: '【顺序连接功能】"-고"的作用是按时间顺序连接两个动作。"커피를 마시고 신문을 읽다"=先喝咖啡，然后看报纸。区别于同时进行（-면서）或条件（-면）。',
         source: 'TOPIK Level 1'
       },
       {
@@ -823,7 +823,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '세수를 하___풀을 합니다.',
         correctAnswers: ['고'],
-        explanation: '동작의 순서를 나타낼 때 "고"를 사용합니다.',
+        explanation: '【日常顺序】"-고"常用于表达日常活动顺序。"세수를 하고 풀을 하다"=先洗脸，再刷牙。描述早上例行公事的顺序。',
         source: 'TOPIK Level 1'
       },
       {
@@ -831,7 +831,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '노래를 부르___춤을 춥니다.',
         correctAnswers: ['고'],
-        explanation: '여러 동작을 나열할 때 "고"를 사용합니다.',
+        explanation: '【多个动作列举】"-고"可列举多个动作。"노래를 부르고 춤을 춥니다"=先唱歌，再跳舞。或者表示又唱歌又跳舞（都做了）。',
         source: 'TOPIK Level 1'
       },
       {
@@ -844,7 +844,7 @@ export const practiceDatabase = {
           { text: '밥을 먹으면 놀았습니다.', correct: false },
           { text: '밥을 먹기 놀았습니다.', correct: false }
         ],
-        explanation: '동작을 순서대로 나열할 때는 "고"를 사용합니다.',
+        explanation: '【"-고"的正确用法】表示顺序时用"-고"。"밥을 먹고 놈았다"=吃完饭然后玩。错误：用"-며"（同时）、"-으면"（假如）、"-기"（名词化）都不对。',
         source: 'TOPIK Level 1'
       },
       {
@@ -852,7 +852,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '옷을 입___외출합니다.',
         correctAnswers: ['고'],
-        explanation: '동작을 순서대로 연결할 때 "고"를 사용합니다.',
+        explanation: '【连续动作】"-고"表示动作连续发生。"옷을 입고 외출하다"=穿好衣服然后出门。前一个动作完成后，才进行后一个。',
         source: 'TOPIK Level 1'
       },
       {
@@ -860,7 +860,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '손을 씻___밥을 먹습니다.',
         correctAnswers: ['고'],
-        explanation: '동작 순서를 나타낼 때 "고"를 사용합니다.',
+        explanation: '【卫生习惯顺序】"-고"描述卫生习惯的顺序。"손을 씩고 밥을 먹다"=先洗手，再吃饭。这是最常用的日常表达！',
         source: 'TOPIK Level 1'
       },
       {
@@ -868,7 +868,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '공부를 하___쉬었습니다.',
         correctAnswers: ['고'],
-        explanation: '여러 동작을 순서대로 나열할 때 "고"를 사용합니다.',
+        explanation: '【顺序列举结束】"-고"可表示做完一件事再做另一件。"공부를 하고 쉬었다"=先学习，然后休息了。注意：必须是先后顺序，不能同时进行。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -892,7 +892,7 @@ export const practiceDatabase = {
           { text: '때', correct: false },
           { text: '방', correct: false }
         ],
-        explanation: '가능성을 나타낼 때 "수 있다"를 사용합니다.',
+        explanation: '【可能性提问】问是否能做某事时用"수 있다"。"먹을 수 있니까?"=能吃吗？/可以吃吗？ 询问对方是否有能力或者被允许吃。',
         source: 'TOPIK Level 1'
       },
       {
@@ -900,7 +900,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '이 문제를 풀___있습니다.',
         correctAnswers: ['수'],
-        explanation: '"수 있다"는 능력이나 가능성을 나타냅니다.',
+        explanation: '【能力表达】"수 있다"表示有能力做某事。"문제를 풀 수 있다"=能解决问题/会解题。既可表示技能，也可表示可能性。',
         source: 'TOPIK Level 1'
       },
       {
@@ -913,7 +913,7 @@ export const practiceDatabase = {
           { text: '목적', correct: false },
           { text: '원인', correct: false }
         ],
-        explanation: '"수 있다"는 능력이나 가능성을 나타냅니다.',
+        explanation: '【能力和可能】"수 있다"有两个意思：①有能力 ②有可能。这道题问"表示什么"，答案是"能力和可能性"。比如"会游泳"（能力）和"明天可能下雨"（可能性）。',
         source: 'TOPIK Level 1'
       },
       {
@@ -921,7 +921,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '나는 피아노를 칠___있습니다.',
         correctAnswers: ['수'],
-        explanation: '"수 있다"는 기술이나 능력을 나타냅니다.',
+        explanation: '【技能能力】"수 있다"表示掌握的技能。"피아노를 칠 수 있다"=会弹钢琴。表示学会了这个技能，有这个能力。',
         source: 'TOPIK Level 1'
       },
       {
@@ -929,7 +929,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '내일 날씨가 좋으면 산에 갈___있습니다.',
         correctAnswers: ['수'],
-        explanation: '조건부 가능성을 나타낼 때 "수 있다"를 사용합니다.',
+        explanation: '【条件可能】在某种条件下可能发生时用"수 있다"。"날씨가 좋으면 갈 수 있다"=如果天气好，就可以去。表示在条件满足时的可能性。',
         source: 'TOPIK Level 1'
       },
       {
@@ -950,7 +950,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '저는 한국말을 배울___있습니다.',
         correctAnswers: ['수'],
-        explanation: '"수 있다"는 능력이나 가능성을 나타냅니다.',
+        explanation: '【学习能力】"수 있다"表示能够学习或接受。"한국말을 배울 수 있다"=能学韩语/可以学韩语。表示有机会或有能力学习。',
         source: 'TOPIK Level 1'
       },
       {
@@ -958,7 +958,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '이 책을 이해할___있습니까?',
         correctAnswers: ['수'],
-        explanation: '이해 가능성을 나타낼 때 "수 있다"를 사용합니다.',
+        explanation: '【理解能力】"수 있다"表示能理解。"이해할 수 있니까?"=能理解吗？/看得懂吗？ 问对方是否有能力理解。',
         source: 'TOPIK Level 1'
       },
       {
@@ -966,7 +966,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '그 사람을 만날___있을까요?',
         correctAnswers: ['수'],
-        explanation: '"수 있다"는 만날 가능성을 나타냅니다.',
+        explanation: '【见面可能】"수 있다"表示见面的可能性。"만날 수 있을까요?"=能见到吗？/可以见面吗？ 询问是否有可能见到对方。',
         source: 'TOPIK Level 1'
       }
     ],
@@ -977,7 +977,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '밥을 먹은___공부를 합니다.',
         correctAnswers: ['후'],
-        explanation: '"은 후에"는 한 동작 후에 다른 동작이 일어남을 나타냅니다.',
+        explanation: '【之后顺序】"-은 후에"表示做完一件事之后再做另一件。"밥을 먹은 후 공부하다"=吃完饭之后学习。比"-고"更强调前一个动作完全结束后才开始后一个。',
         source: 'TOPIK Level 1'
       },
       {
@@ -998,7 +998,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '일을 마친___집에 갔습니다.',
         correctAnswers: ['후'],
-        explanation: '일이 끝난 후의 동작을 나타낼 때 "은 후"를 사용합니다.',
+        explanation: '【工作结束后】"-은 후"表示工作结束之后。"일을 마친 후 집에 가다"=工作做完后回家。强调工作完全完成后才离开。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1011,7 +1011,7 @@ export const practiceDatabase = {
           { text: '동작의 반복', correct: false },
           { text: '동작의 가능성', correct: false }
         ],
-        explanation: '"은 후"는 시간적 순서를 나타냅니다.',
+        explanation: '【先后顺序】"-은 후"的作用是表示：先做前面的动作，完成后再做后面的动作。区别于同时发生、重复或可能性。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1019,7 +1019,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '학교를 졸업한___회사에 다녔습니다.',
         correctAnswers: ['후'],
-        explanation: '순차적 동작을 나타낼 때 "은 후"를 사용합니다.',
+        explanation: '【人生阶段顺序】"-은 후"表示人生阶段的顺序。"졸업한 후 회사에 다니다"=毕业后去公司上班。强调毕业是先发生的事。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1027,7 +1027,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '세수를 한___아침을 먹습니다.',
         correctAnswers: ['후'],
-        explanation: '"은 후"는 순차적 시간 관계를 나타냅니다.',
+        explanation: '【早晨例行顺序】"-은 후"表示早晨活动顺序。"세수한 후 아침 먹다"=洗脸后吃早饭。描述日常例行公事的先后顺序。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1040,7 +1040,7 @@ export const practiceDatabase = {
           { text: '공부한 면서 쉬었습니다.', correct: false },
           { text: '공부한 기 쉬었습니다.', correct: false }
         ],
-        explanation: '"은 후"는 시간적 순서를 나타냅니다.',
+        explanation: '【"-은 후"的正确用法】表示完成后再做用"-은 후"。"공부한 후 쉬다"=学习完后休息。错误：用"-고"（简单连接）、"-면서"（同时）、"-기"（名词化）都不对。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1048,7 +1048,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '저녁을 먹은___산책을 합니다.',
         correctAnswers: ['후'],
-        explanation: '순차적 동작을 나타낼 때 "은 후"를 사용합니다.',
+        explanation: '【晚间活动顺序】"-은 후"表示晚饭后的活动。"저녁 먹은 후 산책하다"=晚饭后散步。是很健康的生活习惯！',
         source: 'TOPIK Level 1'
       },
       {
@@ -1056,7 +1056,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '약을 먹은___잠을 잤습니다.',
         correctAnswers: ['후'],
-        explanation: '"은 후"는 시간적 순서를 나타냅니다.',
+        explanation: '【服药后睡觉】"-은 후"表示服药后的动作。"약 먹은 후 자다"=吃药后睡觉。表示先吃药，然后才睡觉。',
         source: 'TOPIK Level 1'
       },
       {
@@ -1064,7 +1064,7 @@ export const practiceDatabase = {
         type: 'fill-blank',
         question: '운동을 한___샤워를 합니다.',
         correctAnswers: ['후'],
-        explanation: '운동 후 샤워를 하는 순차적 동작을 나타냅니다.',
+        explanation: '【运动后顺序】"-은 후"表示运动后的活动。"운동한 후 샤워하다"=运动后洗澡。这是正确的卫生习惯，先运动再洗澡。',
         source: 'TOPIK Level 1'
       }
     ]
@@ -1083,7 +1083,7 @@ export const practiceDatabase = {
           { text: '갔게', correct: false },
           { text: '갈게', correct: false }
         ],
-        explanation: '-게 하다 표현: 가다 → 가게 하다 (엄마가 나를 학교에 가게 했다 = 엄마가 나를 학교에 보냈다)',
+        explanation: '【使役形态】"-게 하다"表示使役，即“让某人做某事”。"가다"（去）→"가게 하다"（让....去）。“엄마가 나를 학교에 가게 했다”=妈妈让我去学校。相当于英语的"make someone do"。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1095,7 +1095,7 @@ export const practiceDatabase = {
           { text: '자연스럽게 변하는 것', correct: false },
           { text: '능력이 있다는 것', correct: false }
         ],
-        explanation: '-게 하다는 사역 표현으로, 주체가 다른 사람에게 어떤 행동을 하도록 시키는 의미입니다.',
+        explanation: '【使役意义】"-게 하다"是使役表达，表示"主体让别人做某动作"。与"스스로 하다"（自己做）相区别，使役强调是让其他人去做。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1108,7 +1108,7 @@ export const practiceDatabase = {
           { text: '러', correct: false },
           { text: '도록', correct: false }
         ],
-        explanation: '공부하다 → 공부하게 하다 (선생님이 학생들을 공부하게 했다 = 선생님이 학생들이 공부하도록 했다)',
+        explanation: '【动词使役化】任何动词都可以用"-게 하다"变成使役形。"공부하다"（学习）→"공부하게 하다"（让....学习）。“선생님이 학생들을 공부하게 했다”=老师让学生们学习。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1120,7 +1120,7 @@ export const practiceDatabase = {
           { text: '부모님이 저가 공부하게 했어요.', correct: false },
           { text: '부모님이 저를 공부게 했어요.', correct: false }
         ],
-        explanation: '-게 하다 표현은 "명사 + 를/을 + 동사 + 게 하다" 형태입니다.',
+        explanation: '【格式固定】使役形格式：“名词+를/을+动词+게 하다”。正确："나를 공부하게 했다"。错误："나가 공부하게 했다"（用主格가）、"나를 공부게 했다"（漏了하）。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1129,7 +1129,7 @@ export const practiceDatabase = {
         question: '번역: 아버지가 저를 연습하게 했어요.',
         expectedKorean: '아버지가 저를 연습하게 했어요',
         chineseMeaning: '父亲让我练习。',
-        explanation: '-게 하다는 사역의 의미로 "~에게 ...하게 하다"의 형태입니다.',
+        explanation: '【使役形结构】使役句结构：“~에게 ....하게 하다”。“아버지가 저를 연습하게 했다”=父亲让我练习。注意：被使役的人用宾格"를/을"，不用主格"이/가"。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1142,7 +1142,7 @@ export const practiceDatabase = {
           { text: '먹도록', correct: false },
           { text: '먹으러', correct: false }
         ],
-        explanation: '먹다 → 먹게 하다 (의사가 환자에게 약을 먹게 했다)',
+        explanation: '【使役动词例】医疗场景中的使役。"먹다"（吃）→"먹게 하다"（让....吃）。“의사가 환자에게 약을 먹게 했다”=医生让病人吃药。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1166,7 +1166,7 @@ export const practiceDatabase = {
           { text: '배우도록', correct: false },
           { text: '배워', correct: false }
         ],
-        explanation: '배우다 → 배우게 하다 (선생님이 우리에게 한국말을 배우게 했다)',
+        explanation: '【学习使役】教育场景中的使役表达。"배우다"（学）→"배우게 하다"（让....学）。“선생님이 우리에게 한국말을 배우게 했다”=老师让我们学韩语。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1181,7 +1181,7 @@ export const practiceDatabase = {
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '-는 데 표현: 현재진행형 + -는 데 (공부하는 데 어렵다 = 공부하기가 어렵다)',
+        explanation: '【过程难度】"-는 데"表示做某事的过程或难度。"공부하는 데 어려워요"=学习很难/学起来难。相当于中文的"在....方面"或"在....过程中"。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1193,7 +1193,7 @@ export const practiceDatabase = {
           { text: '행동이 끝났다는 의미', correct: false },
           { text: '행동을 할 수 있다는 의미', correct: false }
         ],
-        explanation: '-는 데는 동작의 과정이나 그 과정에서의 어려움, 시간 등을 나타냅니다.',
+        explanation: '【"-는 데"的意义】表示动作过程或过程中的难度、时间等。“공부하는 데 시간이 걸린다”=学习需要花时间。区别于结果（-는 것），强调过程。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1206,7 +1206,7 @@ export const practiceDatabase = {
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '배우는 데 3개월이 걸렸다 = 3개월 동안 배웠다 (시간의 의미)',
+        explanation: '【花费时间】"-는 데"常表示做某事需要的时间。"배우는 데 3개월이 걸렸다"=学习花了3个月。相当于"在....上花了...时间"。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1218,7 +1218,7 @@ export const practiceDatabase = {
           { text: '이 일을 한 데 도움이 필요해요.', correct: false },
           { text: '이 일을 할 데 도움이 필요해요.', correct: false }
         ],
-        explanation: '-는 데는 현재진행형 "-는"과 함께 사용됩니다.',
+        explanation: '【现在进行形】"-는 데"必须用现在进行形"-는"。正确："하는 데"。错误："한 데"（过去式）、"할 데"（未来式）。表示正在做或要做的事。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1227,7 +1227,7 @@ export const practiceDatabase = {
         question: '번역: 일하는 데 시간이 많이 걸려요.',
         expectedKorean: '일하는 데 시간이 많이 걸려요',
         chineseMeaning: '工作需要花很多时间。',
-        explanation: '-는 데 표현은 어떤 행동을 하는 데 필요한 시간이나 어려움을 나타냅니다.',
+        explanation: '【需要时间/资源】"-는 데"表示做某事需要的时间或资源。"일하는 데 시간이 많이 걸린다"=工作需要花很多时间。强调过程中的消耗。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1240,7 +1240,7 @@ export const practiceDatabase = {
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '숙제를 마치는 데 2시간이 걸렸다 (숙제를 끝내기에 2시간이 필요했다)',
+        explanation: '【花费时间表达】"-는 데 2시간이 걸렸다"=花了2小时。"숙제를 마치는 데 2시간"=完成作业需舱2小时。这是非常实用的表达！',
         source: 'TOPIK Level 2'
       },
       {
@@ -1251,7 +1251,7 @@ export const practiceDatabase = {
           { text: '아니오, -는 데는 과정을, -는 것은 결과를 나타냅니다', correct: true },
           { text: '네, 같은 의미입니다', correct: false }
         ],
-        explanation: '-는 데는 과정이나 필요한 시간/어려움을, -는 것은 행동 자체나 결과를 나타냅니다.',
+        explanation: '【"-는 데"vs"-는 것"】"-는 데"强调过程，"-는 것"强调结果。“공부하는 데 어렵다”（学习过程难）≠“공부하는 것이 어렵다”（学习这件事难）。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1264,7 +1264,7 @@ export const practiceDatabase = {
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '음식을 요리하는 데 어렵다 = 요리하기가 어렵다',
+        explanation: '【烹饪难度】"-는 데 어렵다"表示做起来难。"요리하는 데 어렵다"=做起来难/做起来复杂。强调烹饪过程中的难度。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1279,7 +1279,7 @@ export const practiceDatabase = {
           { text: '려고', correct: false },
           { text: '고', correct: false }
         ],
-        explanation: '-도록 표현: 건강하도록 운동하다 = 건강해지기 위해 운동하다 (목적)',
+        explanation: '【目的表达】"-도록"表示目的，相当于"为了..."。"건강하도록 운동하다"=为了健康而运动/为了变健康而运动。表示运动的目的是健康。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1291,7 +1291,7 @@ export const practiceDatabase = {
           { text: '원인(~때문에)', correct: false },
           { text: '조건(~하면)', correct: false }
         ],
-        explanation: '-도록은 목적을 나타낼 때 "~하기 위해"의 의미, 결과를 나타낼 때는 "~하게 되다"의 의미를 가집니다.',
+        explanation: '【"-도록"的主要意义】①目的："为了..."。②结果："使得..."/"让..."。比如"늘지 않도록 빨리 오다"（为了不迟到而快来）是目的；"모든 사람이 알도록 하다"（让所有人知道）是结果。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1316,7 +1316,7 @@ export const practiceDatabase = {
           { text: '전학교 학생에게 이 소식을 알리 도록 하겠습니다.', correct: false },
           { text: '전학교 학생에게 이 소식을 알도록 하겠습니다.', correct: false }
         ],
-        explanation: '-도록은 동사 또는 형용사 어간에 붙습니다.',
+        explanation: '【连接在词干上】"-도록"直接接在动词或形容词词干后。正确："알리도록"（通知）。错误："알리 도록"（分开写）、"알도록"（缺少词尾）。不能分开写！',
         source: 'TOPIK Level 2'
       },
       {
@@ -1325,7 +1325,7 @@ export const practiceDatabase = {
         question: '번역: 다시 오지 않도록 지금 해결하세요.',
         expectedKorean: '다시 오지 않도록 지금 해결하세요',
         chineseMeaning: '现在解决，以免再出现。',
-        explanation: '-도록은 목적을 나타내는 표현으로 사용됩니다.',
+        explanation: '【目的表达应用】"-도록"常用于表达行为目的。"다시 오지 않도록 해결하다"=解决以免再来/解决以免再出现。强调解决问题的目的是防止再次出现。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1338,7 +1338,7 @@ export const practiceDatabase = {
           { text: '려고', correct: false },
           { text: '고', correct: false }
         ],
-        explanation: '학교에 가도록 준비를 해야 한다 = 학교에 갈 수 있도록 준비하다 (목적)',
+        explanation: '【准备目的】"-도록"表示准备的目的。"학교에 가도록 짐을 챙기다"=为了去学校而收拾行李/收拾东西以便去学校。准备的目的是能够去学校。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1349,7 +1349,7 @@ export const practiceDatabase = {
           { text: '네, 때로는 비슷한 의미로 사용될 수 있습니다', correct: true },
           { text: '아니오, 완전히 다른 의미입니다', correct: false }
         ],
-        explanation: '둘 다 목적이나 결과를 나타낼 수 있지만, 미묘한 차이가 있습니다.',
+        explanation: '【"-도록"vs"-게 하다"】两者有时可替换但有微妙差异。“모든 사람이 알도록 하다”≈“모든 사람이 알게 하다”（让所有人知道）。前者强调目的，后者强调使役。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1362,7 +1362,7 @@ export const practiceDatabase = {
           { text: '려고', correct: false },
           { text: '고', correct: false }
         ],
-        explanation: '실패하지 않도록 노력하다 = 실패하지 않기 위해 노력하다 (목적)',
+        explanation: '【为了不失败】"-도록"表达努力的目的。"실패하지 않도록 노력하다"=为了不失败而努力/努力以免失败。强调努力的目的是避免失败。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1377,7 +1377,7 @@ export const practiceDatabase = {
           { text: '니까', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '와(와다) + 도 = 와도 (비가 와도...)',
+        explanation: '【转折表达】"-아/어도"表示转折或让步，相当于"虽然...但是..."。"비가 와도 간다"=虽然下雨，但还是去。前后两个情况相反，但结果不变。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1398,7 +1398,7 @@ export const practiceDatabase = {
           { text: '니까', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '열심히(열심히) + 공부하다 → 공부해도 (열심히 공부해도...)',
+        explanation: '【即使努力】"-어도"表示让步。"열심히 공부해도 떨어졌다"=虽然努力学习，但还是没过。强调即使努力了，结果仍然不好。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1410,7 +1410,7 @@ export const practiceDatabase = {
           { text: '아무리 노력어도 안 된다', correct: false },
           { text: '아무리 노력아도 안 된다', correct: false }
         ],
-        explanation: '노력(노력) → 노력하다 → 노력해도'
+        explanation: '【动词转折形】动词后加"-어도/아도"。"노력하다"（努力）→"노력해도"（虽然努力）。"아무리 노력해도 안 된다"=无论怎么努力都不行。',
       },
       {
         id: 'int_010_005',
@@ -1420,7 +1420,7 @@ export const practiceDatabase = {
           { text: '대조, 돈이 많아도...', correct: true },
           { text: '원인', correct: false }
         ],
-        explanation: '-어도는 대조 관계를 나타냅니다.'
+        explanation: '【转折关系】"-어도"表示转折或对比。"돈이 많아도 행복하지 않다"=虽然钱多，但不幸福。表示有钱和幸福之间没有必然联系。',
       },
       {
         id: 'int_010_006',
@@ -1432,7 +1432,7 @@ export const practiceDatabase = {
           { text: '니까', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '말하다 → 말해도 (몇 번 말해도...)',
+        explanation: '【反复让步】"-어도"表示多次依然如此。"몇 번 말해도 듣지 않는다"=说了好几次也不听。强调多次说了，但对方还是不听。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1453,7 +1453,7 @@ export const practiceDatabase = {
           { text: '니까', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '실패하다 → 실패해도 (실패해도...)',
+        explanation: '【即使失败】"-어도"表示失败也要坚持。"실패해도 다시 시도하다"=即使失败也要重试。强调失败不能阻止继续尝试。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1468,7 +1468,7 @@ export const practiceDatabase = {
           { text: '할', correct: false },
           { text: '했던', correct: false }
         ],
-        explanation: '공부 + 하다 → 공부하는 중이다',
+        explanation: '【正在进行中】"-는 중이다"表示动作正在进行。"공부하는 중이다"=正在学习。比"-고 있다"更正式，强调此刻正在进行。',
         source: 'TOPIK Level 2'
       },
       {
@@ -1480,7 +1480,7 @@ export const practiceDatabase = {
           { text: '과거의 행동', correct: false },
           { text: '미래의 계획', correct: false }
         ],
-        explanation: '-는 중이다는 지금 진행 중인 것을 나타냅니다.'
+        explanation: '【进行状态】"-는 중이다"表示正在进行的状态。区别于过去（-했다）或未来（-할 것이다），强调此刻正在进行中。',
       },
       {
         id: 'int_011_003',
@@ -1492,7 +1492,7 @@ export const practiceDatabase = {
           { text: '될', correct: false },
           { text: '됐던', correct: false }
         ],
-        explanation: '상영되다 → 상영되는 중이다',
+        explanation: '【被动进行】"상영되다"（上映/被放映）+"는 중이다"="상영되는 중이다"（正在上映）。表示电影此刻正在影院放映。',
         source: 'TOPIK Level 2'
       },
       {

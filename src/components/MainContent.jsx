@@ -4,6 +4,7 @@ import DetailView from './views/DetailView'
 import FavoritesView from './views/FavoritesView'
 import WrongAnswersView from './views/WrongAnswersView'
 import TipsView from './views/TipsView'
+import FAQView from './views/FAQView'
 import './MainContent.css'
 
 function MainContent({
@@ -49,6 +50,10 @@ function MainContent({
 
       {currentView === 'tips' && (
         <TipsView currentLevel={currentLevel} />
+      )}
+
+      {currentView === 'faq' && (
+        <FAQView currentLevel={currentLevel} />
       )}
     </main>
   )

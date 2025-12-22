@@ -11,7 +11,8 @@ function Sidebar({ currentLevel, selectedCategory, onCategoryChange, currentView
     { key: 'browse', label: '浏览语法', icon: '📚' },
     { key: 'favorites', label: '我的收藏', icon: '❤️' },
     { key: 'wrong-answers', label: '错题集', icon: '✏️' },
-    { key: 'tips', label: '学习技巧', icon: '💡' }
+    { key: 'tips', label: '学习技巧', icon: '💡' },
+    { key: 'faq', label: '语法问答', icon: '❓' }
   ]
 
   return (
