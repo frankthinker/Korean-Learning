@@ -276,7 +276,269 @@ export const grammarDatabase = {
         { word: '가는 길', meaning: '去的路（现在）' },
         { word: '간 길', meaning: '去过的路（过去）' }
       ]
+    },
+    {
+      id: 'beg_010',
+      form: '있다/없다',
+      title: '存在/不存在',
+      category: '基础词尾',
+      definition: '表示事物、人或某事物的存在或不存在',
+      meaning: '有...、没有...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '가방이 책상 위에 있어요.',
+          chinese: '包在书桌上。',
+          situation: '日常'
+        },
+        {
+          korean: '시간이 없어요.',
+          chinese: '没有时间。',
+          situation: '日常'
+        }
+      ],
+      notes: '最常用的基础动词，表示存在状态',
+      expandVocab: [
+        { word: '있어요', meaning: '有/在' },
+        { word: '없어요', meaning: '没有/不在' }
+      ]
+    },
+    {
+      id: 'beg_011',
+      form: '가다/오다',
+      title: '去/来',
+      category: '基础词尾',
+      definition: '表示移动的方向：去（离开）或来（接近）',
+      meaning: '去...、来...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '학교에 가요.',
+          chinese: '去学校。',
+          situation: '日常'
+        },
+        {
+          korean: '집에 와요.',
+          chinese: '来家里。',
+          situation: '日常'
+        }
+      ],
+      notes: '基础动词，方向性相反',
+      expandVocab: [
+        { word: '가요', meaning: '去' },
+        { word: '와요', meaning: '来' }
+      ]
+    },
+    {
+      id: 'beg_012',
+      form: '하다',
+      title: '做/进行',
+      category: '基础词尾',
+      definition: '表示做某事或进行某动作',
+      meaning: '做...、进行...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '뭐 해요?',
+          chinese: '你在做什么？',
+          situation: '日常'
+        },
+        {
+          korean: '공부해요.',
+          chinese: '我在学习。',
+          situation: '日常'
+        }
+      ],
+      notes: '最常用的多功能动词，与许多名词组合形成短语动词',
+      expandVocab: [
+        { word: '해요', meaning: '做' },
+        { word: '공부하다', meaning: '学习' },
+        { word: '일하다', meaning: '工作' }
+      ]
+    },
+    {
+      id: 'beg_013',
+      form: '먹다/마시다',
+      title: '吃/喝',
+      category: '基础词尾',
+      definition: '먹다表示吃固体食物，마시다表示喝液体',
+      meaning: '吃...、喝...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '밥을 먹어요.',
+          chinese: '我在吃饭。',
+          situation: '日常'
+        },
+        {
+          korean: '물을 마셔요.',
+          chinese: '我在喝水。',
+          situation: '日常'
+        }
+      ],
+      notes: '重要区分：固体用먹다，液体用마시다',
+      expandVocab: [
+        { word: '먹어요', meaning: '吃' },
+        { word: '마셔요', meaning: '喝' }
+      ]
+    },
+    {
+      id: 'beg_014',
+      form: '자다',
+      title: '睡觉',
+      category: '基础词尾',
+      definition: '表示睡眠或休息',
+      meaning: '睡...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '밤에 자요.',
+          chinese: '晚上睡觉。',
+          situation: '日常'
+        },
+        {
+          korean: '충분히 자요.',
+          chinese: '睡眠充足。',
+          situation: '日常'
+        }
+      ],
+      notes: '不规则动词，变化形式需注意',
+      expandVocab: [
+        { word: '자요', meaning: '睡觉' },
+        { word: '일어나다', meaning: '起床' }
+      ]
+    },
+    {
+      id: 'beg_015',
+      form: '보다',
+      title: '看/见',
+      category: '基础词尾',
+      definition: '表示视觉观看或见面',
+      meaning: '看...、见...、会面',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '영화를 봐요.',
+          chinese: '我在看电影。',
+          situation: '日常'
+        },
+        {
+          korean: '친구를 봐요.',
+          chinese: '我在见朋友。',
+          situation: '日常'
+        }
+      ],
+      notes: '不规则动词，-보다变化为-봐요',
+      expandVocab: [
+        { word: '봐요', meaning: '看' },
+        { word: '봤어요', meaning: '看了' }
+      ]
+    },
+    {
+      id: 'beg_016',
+      form: '말하다/듣다',
+      title: '说/听',
+      category: '基础词尾',
+      definition: '말하다表示说话，듣다表示听取声音',
+      meaning: '说...、听...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '한국말을 해요.',
+          chinese: '我说韩语。',
+          situation: '日常'
+        },
+        {
+          korean: '음악을 들어요.',
+          chinese: '我在听音乐。',
+          situation: '日常'
+        }
+      ],
+      notes: '基本动词，表示信息交流',
+      expandVocab: [
+        { word: '말해요', meaning: '说' },
+        { word: '들어요', meaning: '听' }
+      ]
+    },
+    {
+      id: 'beg_017',
+      form: '숨다/찾다',
+      title: '躲藏/寻找',
+      category: '基础词尾',
+      definition: '숨다表示躲藏，찾다表示寻找或搜索',
+      meaning: '躲...、找...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '어디에 숨어요.',
+          chinese: '藏在哪里。',
+          situation: '日常'
+        },
+        {
+          korean: '열쇠를 찾아요.',
+          chinese: '我在找钥匙。',
+          situation: '日常'
+        }
+      ],
+      notes: '反义动词对，常用于日常情境',
+      expandVocab: [
+        { word: '숨어요', meaning: '躲' },
+        { word: '찾아요', meaning: '找' }
+      ]
+    },
+    {
+      id: 'beg_018',
+      form: '좋아하다',
+      title: '喜欢',
+      category: '基础词尾',
+      definition: '表示喜欢或偏好某事物',
+      meaning: '喜欢...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '음악을 좋아해요.',
+          chinese: '我喜欢音乐。',
+          situation: '日常'
+        },
+        {
+          korean: '스포츠를 좋아해요.',
+          chinese: '我喜欢运动。',
+          situation: '日常'
+        }
+      ],
+      notes: '动词形容词，表示个人偏好',
+      expandVocab: [
+        { word: '좋아해요', meaning: '喜欢' },
+        { word: '좋다', meaning: '好' }
+      ]
+    },
+    {
+      id: 'beg_019',
+      form: '만나다/헤어지다',
+      title: '见面/分手',
+      category: '基础词尾',
+      definition: '만나다表示相遇或见面，헤어지다表示告别或分离',
+      meaning: '见面...、分别...',
+      partOfSpeech: '动词',
+      examples: [
+        {
+          korean: '친구를 만나요.',
+          chinese: '我在见朋友。',
+          situation: '日常'
+        },
+        {
+          korean: '내일 안녕히 헤어져요.',
+          chinese: '明天再见。',
+          situation: '日常'
+        }
+      ],
+      notes: '关系动词，强调人际互动',
+      expandVocab: [
+        { word: '만나요', meaning: '见面' },
+        { word: '헤어져요', meaning: '分别' }
+      ]
     }
+
   ],
   intermediate: [
     {
