@@ -1,0 +1,156 @@
+import React, { useMemo, useState, useEffect } from 'react'
+import { grammarDatabase } from '../../data/grammarData'
+import StorageManager from '../../utils/storageManager'
+
+function WrongAnswersView({ onGrammarSelect, onViewChange }) {
+  const [wrongAnswers, setWrongAnswers] = useState(StorageManager.getWrongAnswers())
+  const [selectedLevel, setSelectedLevel] = useState(null)
+
+  // 订阅存储变化
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setWrongAnswers(StorageManager.getWrongAnswers())
+    }
+
+    window.addEventListener('storage', handleStorageChange)
+    // 监听自定义事件
+    window.addEventListener('wrongAnswersUpdated', handleStorageChange)
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange)
+      window.removeEventListener('wrongAnswersUpdated', handleStorageChange)
+    }
+  }, [])
+
+  // 按级别分组
+  const groupedByLevel = useMemo(() => {
+    const groups = {}
+    wrongAnswers.forEach(wrong => {
+      if (!groups[wrong.level]) {
+        groups[wrong.level] = []
+      }
+      groups[wrong.level].push(wrong)
+    })
+    return groups
+  }, [wrongAnswers])
+
+  // 过滤根据选定级别
+  const filteredWrongAnswers = selectedLevel
+    ? groupedByLevel[selectedLevel] || []
+    : wrongAnswers
+
+  const levelNames = {
+    beginner: '初级',
+    intermediate: '中级',
+    advanced: '高级'
+  }
+
+  const handleRemoveWrongAnswer = (questionId, e) => {
+    e.stopPropagation()
+    StorageManager.removeWrongAnswer(questionId)
+    // 更新本地状态
+    setWrongAnswers(StorageManager.getWrongAnswers())
+  }
+
+  const handleRetry = (wrongAnswer, e) => {
+    e.stopPropagation()
+    const grammars = grammarDatabase[wrongAnswer.level] || []
+    const grammar = grammars.find(g => g.id === wrongAnswer.grammarId)
+    if (grammar) {
+      onGrammarSelect(grammar, wrongAnswer.level)
+    }
+  }
+
+  return (
+    <div className="wrong-answers-view">
+      <div className="wrong-answers-header">
+        <h2>错题集</h2>
+        <p className="wrong-count">共 {wrongAnswers.length} 道错题</p>
+      </div>
+
+      {wrongAnswers.length > 0 ? (
+        <>
+          <div className="level-filter">
+            <button
+              className={`filter-btn ${selectedLevel === null ? 'active' : ''}`}
+              onClick={() => setSelectedLevel(null)}
+            >
+              全部级别
+            </button>
+            {Object.keys(groupedByLevel).map(level => (
+              <button
+                key={level}
+                className={`filter-btn ${selectedLevel === level ? 'active' : ''}`}
+                onClick={() => setSelectedLevel(level)}
+              >
+                {levelNames[level]} ({groupedByLevel[level].length})
+              </button>
+            ))}
+          </div>
+
+          <div className="wrong-answers-list">
+            {filteredWrongAnswers.map((wrongAnswer, idx) => (
+              <div key={idx} className="wrong-item card">
+                <div className="wrong-header">
+                  <div className="wrong-question">
+                    <span className="attempt-badge">
+                      {wrongAnswer.attempts} 次错误
+                    </span>
+                    <p className="question-text">问题 ID: {wrongAnswer.questionId}</p>
+                  </div>
+                  <button
+                    className="remove-btn"
+                    onClick={(e) => handleRemoveWrongAnswer(wrongAnswer.questionId, e)}
+                    title="删除"
+                  >
+                    ×
+                  </button>
+                </div>
+
+                <div className="wrong-content">
+                  <div className="answer-section">
+                    <label>你的答案：</label>
+                    <p className="user-answer">{wrongAnswer.userAnswer}</p>
+                  </div>
+
+                  <div className="answer-section">
+                    <label>正确答案：</label>
+                    <p className="correct-answer">{wrongAnswer.correctAnswer}</p>
+                  </div>
+
+                  <div className="explanation-section">
+                    <label>解析：</label>
+                    <p className="explanation-text">{wrongAnswer.explanation}</p>
+                  </div>
+                </div>
+
+                <div className="wrong-footer">
+                  <small className="last-attempt">
+                    最后尝试时间：{new Date(wrongAnswer.lastAttempt).toLocaleDateString('zh-CN')}
+                  </small>
+                  <button
+                    className="retry-btn"
+                    onClick={(e) => handleRetry(wrongAnswer, e)}
+                  >
+                    重新练习 →
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className="empty-wrong">
+          <span className="empty-icon">✨</span>
+          <h3>没有错题</h3>
+          <p>做题时出错的问题会自动记录在这里</p>
+          <button className="btn-practice" onClick={() => onViewChange('browse')}>
+            开始练习
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default WrongAnswersView

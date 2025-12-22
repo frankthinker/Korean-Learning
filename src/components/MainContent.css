@@ -1,0 +1,19 @@
+/* 主内容区样式 */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--secondary-color);
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 15px 10px;
+  }
+}

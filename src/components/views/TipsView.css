@@ -1,0 +1,139 @@
+/* TipsView 样式 */
+.tips-view {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tips-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tips-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.tips-subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+/* 提示网格 */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.tip-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  background-color: var(--bg-light);
+  border-left: 4px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tip-icon {
+  font-size: 32px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.tip-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.tip-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 底部建议 */
+.tips-footer {
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid var(--warning-color);
+}
+
+.tips-footer h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  color: #856404;
+}
+
+.footer-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-tip-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.item-icon {
+  flex-shrink: 0;
+  font-size: 20px;
+  color: var(--success-color);
+  font-weight: 700;
+}
+
+.footer-tip-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #856404;
+  line-height: 1.6;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .tips-view {
+    gap: 30px;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-header h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tips-footer {
+    padding: 20px;
+  }
+
+  .tips-footer h3 {
+    font-size: 18px;
+  }
+
+  .tip-card {
+    padding: 20px;
+  }
+
+  .tip-icon {
+    font-size: 28px;
+  }
+}

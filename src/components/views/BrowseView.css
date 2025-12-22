@@ -1,0 +1,172 @@
+/* BrowseView 样式 */
+.browse-view {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 进度卡片 */
+.progress-card {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #357abd 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.progress-card h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  color: white;
+}
+
+.progress-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.progress-bar-container {
+  flex: 1;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #f39c12);
+  transition: width 0.5s ease;
+}
+
+.progress-percentage {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 50px;
+  text-align: right;
+}
+
+/* 语法列表部分 */
+.grammar-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.list-header h2 {
+  margin: 0;
+  flex: 1;
+}
+
+.result-count {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* 语法网格 */
+.grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 空状态 */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.empty-state h3 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary);
+}
+
+.empty-state p {
+  margin: 0;
+  color: var(--text-secondary);
+  max-width: 400px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .browse-view {
+    gap: 20px;
+  }
+
+  .progress-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .progress-stat {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
+
+  .grammar-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .grammar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .empty-state {
+    padding: 40px 20px;
+  }
+
+  .empty-icon {
+    font-size: 36px;
+  }
+}
