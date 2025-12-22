@@ -118,33 +118,78 @@ function PracticeModule({ grammar, level }) {
 
   if (practiceType === 'comprehensive') {
     const comprehensiveTests = comprehensiveTestDatabase[level] || []
-    return (
-      <div className="practice-module">
-        <div className="practice-header">
-          <h3>综合测试</h3>
-          <button className="back-to-single" onClick={() => setPracticeType('single')}>
-            ← 回到单题练习
-          </button>
-        </div>
-        <div className="comprehensive-info">
-          {comprehensiveTests.length > 0 ? (
-            <div>
-              <p>综合测试中包含多个语法点的综合应用</p>
-              <div className="test-list">
-                {comprehensiveTests.map((test, idx) => (
-                  <div key={test.id} className="test-item">
-                    <h4>{test.title}</h4>
-                    <p>类型：{test.type}</p>
+    
+    // 如果有综合测试，显示第一个测试
+    if (comprehensiveTests.length > 0) {
+      const currentTest = comprehensiveTests[0]
+      return (
+        <div className="practice-module">
+          <div className="practice-header">
+            <h3>综合测试 - {currentTest.title}</h3>
+            <button className="back-to-single" onClick={() => setPracticeType('single')}>
+              ← 回到单题练习
+            </button>
+          </div>
+          <div className="comprehensive-test">
+            {currentTest.passage && (
+              <div className="passage">
+                <h4>阅读材料</h4>
+                <p>{currentTest.passage}</p>
+              </div>
+            )}
+            
+            {currentTest.dialogue && (
+              <div className="dialogue">
+                <h4>对话</h4>
+                {currentTest.dialogue.map((line, idx) => (
+                  <div key={idx} className="dialogue-line">
+                    <strong>{line.speaker}:</strong> {line.text}
                   </div>
                 ))}
               </div>
+            )}
+            
+            <div className="test-questions">
+              <h4>问题</h4>
+              {currentTest.questions?.map((question, idx) => (
+                <div key={idx} className="question-item">
+                  <p>{idx + 1}. {question.question}</p>
+                  <div className="options">
+                    {question.options?.map((option, optIdx) => (
+                      <div key={optIdx} className="option">
+                        <label>
+                          <input type="radio" name={`question-${idx}`} value={optIdx} />
+                          {option}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          ) : (
-            <p>该级别的综合测试正在完善中，敬请期待！</p>
-          )}
+            
+            <button className="btn-submit" onClick={() => setPracticeType('single')}>
+              完成测试
+            </button>
+          </div>
         </div>
-      </div>
-    )
+      )
+    } else {
+      // 如果没有综合测试，显示提示信息
+      return (
+        <div className="practice-module">
+          <div className="practice-header">
+            <h3>综合测试</h3>
+            <button className="back-to-single" onClick={() => setPracticeType('single')}>
+              ← 回到单题练习
+            </button>
+          </div>
+          <div className="comprehensive-info">
+            <p>该级别的综合测试正在完善中，敬请期待！</p>
+          </div>
+        </div>
+      )
+    }
   }
 
   // 如果没有加载到练习题
@@ -180,6 +225,12 @@ function PracticeModule({ grammar, level }) {
             <button className="btn-continue" onClick={() => setPracticeType('comprehensive')}>
               进行综合测试
             </button>
+          </div>
+          {/* 调试信息 */}
+          <div style={{marginTop: '20px', padding: '10px', backgroundColor: '#f0f0f0', borderRadius: '4px'}}>
+            <p>调试信息：</p>
+            <p>当前级别: {level}</p>
+            <p>综合测试数量: {comprehensiveTestDatabase[level]?.length || 0}</p>
           </div>
         </div>
       </div>
