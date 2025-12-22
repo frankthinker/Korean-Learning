@@ -48,7 +48,7 @@ npm install
 ```bash
 npm run dev
 ```
-访问 `http://localhost:5173` 开始使用（如果5173端口被占用，Vite会自动尝试其他端口，实际端口会在终端中显示）
+访问 `http://localhost:5178` 开始使用（如果5178端口被占用，Vite会自动尝试其他端口，实际端口会在终端中显示）
 
 ### 生产构建
 ```bash
