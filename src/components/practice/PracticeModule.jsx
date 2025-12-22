@@ -61,10 +61,18 @@ function PracticeModule({ grammar, level }) {
       setIsCorrect(false)
       // 获取正确答案，支持多种题型
       let correctAnswer = ''
+      let displayUserAnswer = userAnswer
+      
       if (question.type === 'multiple-choice' || question.type === 'context-judgment') {
         // 对于选择题，找到正确选项
         const correctOption = question.options?.find(option => option.correct)
         correctAnswer = correctOption ? correctOption.text : ''
+        
+        // 将用户答案从索引转换为选项文本
+        const userOptionIndex = parseInt(userAnswer)
+        if (!isNaN(userOptionIndex) && question.options && question.options[userOptionIndex]) {
+          displayUserAnswer = question.options[userOptionIndex].text
+        }
       } else if (question.type === 'fill-blank') {
         // 对于填空题，使用第一个正确答案
         correctAnswer = question.correctAnswers?.[0] || question.correctAnswer || ''
@@ -77,7 +85,7 @@ function PracticeModule({ grammar, level }) {
         question.id,
         grammar.id,
         level,
-        userAnswer,
+        displayUserAnswer,
         correctAnswer,
         question.explanation
       )
