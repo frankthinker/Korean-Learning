@@ -57,8 +57,8 @@ function App() {
     setSelectedCategory(null)
     setSearchQuery('')
     
-    // 只有在特定视图下才切换到浏览视图，保持FAQ等其他视图不变
-    if (['browse', 'favorites', 'wrong-answers', 'tips'].includes(currentView)) {
+    // 只有在特定视图下才切换到浏览视图，保持FAQ、学习技巧等其他视图不变
+    if (['browse', 'favorites', 'wrong-answers'].includes(currentView)) {
       setCurrentView('browse')
       setSelectedGrammar(null)
     }

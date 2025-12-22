@@ -72,7 +72,8 @@ function WrongAnswersView({ onGrammarSelect, onViewChange }) {
 
   // 清空当前级别错题
   const handleClearCurrentLevel = () => {
-    if (window.confirm(`确定要清空${levelNames[selectedLevel || '全部']}级别的错题吗？此操作不可撤销！`)) {
+    const levelName = selectedLevel ? levelNames[selectedLevel] : '全部';
+    if (window.confirm(`确定要清空${levelName}级别的错题吗？此操作不可撤销！`)) {
       if (selectedLevel) {
         StorageManager.clearWrongAnswersByLevel(selectedLevel)
         setWrongAnswers(StorageManager.getWrongAnswers())
