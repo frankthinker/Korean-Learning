@@ -4,7 +4,7 @@ import './GrammarCard.css'
 
 function GrammarCard({ grammar, level, onSelect }) {
   const [isFavorite, setIsFavorite] = useState(StorageManager.isFavorite(grammar.id, level))
-  const isLearned = StorageManager.isGrammarLearned(grammar.id, level)
+  const [isLearned, setIsLearned] = useState(StorageManager.isGrammarLearned(grammar.id, level))
 
   const handleFavoriteClick = (e) => {
     e.stopPropagation()
@@ -19,6 +19,7 @@ function GrammarCard({ grammar, level, onSelect }) {
   const handleMarkAsLearned = (e) => {
     e.stopPropagation()
     StorageManager.markGrammarAsLearned(grammar.id, level)
+    setIsLearned(true)
   }
 
   return (
