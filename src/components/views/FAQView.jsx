@@ -237,6 +237,11 @@ function FAQView({ currentLevel }) {
   const [selectedTags, setSelectedTags] = useState(new Set());
   const [showToTop, setShowToTop] = useState(false);
 
+  // 当级别变化时，清除选中的标签
+  useEffect(() => {
+    setSelectedTags(new Set());
+  }, [currentLevel]);
+
   // 切换FAQ展开/折叠
   const toggleItem = (id) => {
     const newOpenItems = new Set(openItems);
