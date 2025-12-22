@@ -46,11 +46,10 @@ npm install
 
 ### 开发模式（推荐方式）
 ```bash
-python scripts/start_dev_server.py
+python scripts/launch_dev.py
 ```
 脚本将自动：
-- 检测可用端口
-- 启动开发服务器
+- 启动开发服务器（端口5176）
 - 自动打开浏览器
 
 ### 开发模式（传统方式）
