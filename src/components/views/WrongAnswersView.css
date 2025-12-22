@@ -1,0 +1,354 @@
+/* WrongAnswersView 样式 */
+.wrong-answers-view {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.wrong-answers-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrong-answers-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.wrong-count {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+/* 级别筛选器 */
+.level-filter {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+/* 错题列表 */
+.wrong-answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrong-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: var(--bg-light);
+  border-left: 4px solid var(--error-color);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.wrong-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 错题头部 */
+.wrong-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wrong-question {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.attempt-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--error-color);
+  color: white;
+  align-self: flex-start;
+}
+
+.question-text {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.remove-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: var(--error-color);
+  color: white;
+  border-color: var(--error-color);
+  transform: scale(1.1);
+}
+
+/* 错题内容 */
+.wrong-content {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.answer-section label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.user-answer {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #ffeeee;
+  border-radius: 6px;
+  color: #c0392b;
+  font-family: monospace;
+  font-size: 14px;
+  border-left: 3px solid var(--error-color);
+}
+
+.correct-answer {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #e8f5e9;
+  border-radius: 6px;
+  color: #27ae60;
+  font-family: monospace;
+  font-size: 14px;
+  border-left: 3px solid var(--success-color);
+}
+
+.explanation-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.explanation-section label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.explanation-text {
+  margin: 0;
+  padding: 12px 15px;
+  background-color: #fff8e1;
+  border-radius: 6px;
+  color: #7d6608;
+  font-size: 14px;
+  line-height: 1.5;
+  border-left: 3px solid var(--warning-color);
+}
+
+/* 错题底部 */
+.wrong-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.last-attempt {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.retry-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+  background-color: #3a7bc8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+/* 空状态 */
+.empty-wrong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.empty-icon {
+  font-size: 48px;
+}
+
+.empty-wrong h3 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.empty-wrong p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.btn-practice {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-practice:hover {
+  background-color: #3a7bc8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.3);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .wrong-answers-view {
+    gap: 25px;
+  }
+  
+  .wrong-answers-header h2 {
+    font-size: 24px;
+  }
+  
+  .level-filter {
+    gap: 10px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .wrong-header {
+    padding: 15px 20px 10px;
+  }
+  
+  .wrong-content {
+    padding: 15px 20px;
+  }
+  
+  .wrong-footer {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .retry-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .level-filter {
+    gap: 8px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .wrong-header {
+    padding: 12px 15px 8px;
+  }
+  
+  .wrong-content {
+    padding: 12px 15px;
+  }
+  
+  .wrong-footer {
+    padding: 12px 15px;
+  }
+  
+  .question-text {
+    font-size: 14px;
+  }
+  
+  .user-answer,
+  .correct-answer,
+  .explanation-text {
+    font-size: 13px;
+  }
+}

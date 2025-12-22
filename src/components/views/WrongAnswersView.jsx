@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react'
 import { grammarDatabase } from '../../data/grammarData'
 import StorageManager from '../../utils/storageManager'
+import './WrongAnswersView.css'
 
 function WrongAnswersView({ onGrammarSelect, onViewChange }) {
   const [wrongAnswers, setWrongAnswers] = useState(StorageManager.getWrongAnswers())
