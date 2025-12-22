@@ -35,24 +35,26 @@ function Header({ currentLevel, onLevelChange, isDarkMode, onToggleDarkMode, sea
         </div>
 
         <div className="header-right">
-          <div className="search-box">
-            <input
-              type="text"
-              placeholder="搜索语法点（韩文/中文）..."
-              className="search-input"
-              value={searchQuery}
-              onChange={(e) => onSearchChange(e.target.value)}
-            />
-            <span className="search-icon">🔍</span>
-          </div>
+          <div className="header-controls">
+            <div className="search-box">
+              <input
+                type="text"
+                placeholder="搜索语法点（韩文/中文）..."
+                className="search-input"
+                value={searchQuery}
+                onChange={(e) => onSearchChange(e.target.value)}
+              />
+              <span className="search-icon">🔍</span>
+            </div>
 
-          <button
-            className="dark-mode-btn"
-            onClick={onToggleDarkMode}
-            title={isDarkMode ? '切换浅色模式' : '切换深色模式'}
-          >
-            {isDarkMode ? '☀️' : '🌙'}
-          </button>
+            <button
+              className="dark-mode-btn"
+              onClick={onToggleDarkMode}
+              title={isDarkMode ? '切换浅色模式' : '切换深色模式'}
+            >
+              {isDarkMode ? '☀️' : '🌙'}
+            </button>
+          </div>
 
           <button
             className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
