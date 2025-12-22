@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import StorageManager from '../../utils/storageManager'
-import { practiceDatabase } from '../../data/practiceDatabase'
+import { practiceDatabase } from '../../data/practice/index.js'
 import { comprehensiveTestDatabase } from '../../data/comprehensiveTestDatabase'
 import './PracticeModule.css'
 

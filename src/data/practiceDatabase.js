@@ -1070,30 +1070,31 @@ export const practiceDatabase = {
     ]
   }
   ,
-  intermediate: {
+intermediate: {
     // 중급 연습 문제 - 각 문법점마다 8-10문제 제공
     int_001: [ // -게 하다 (使役形)
       {
         id: 'int_001_001',
         type: 'multiple-choice',
-        question: '어머니가 나를 학교에___했어요.',
+        question: '어머니가 나를 학교에___했어요. (妈妈让我去学校。)',
         options: [
           { text: '가게', correct: true },
           { text: '가', correct: false },
           { text: '갔게', correct: false },
           { text: '갈게', correct: false }
         ],
-        explanation: '【使役形态】"-게 하다"表示使役，即“让某人做某事”。"가다"（去）→"가게 하다"（让....去）。“엄마가 나를 학교에 가게 했다”=妈妈让我去学校。相当于英语的"make someone do"。',
+        explanation: '【使役形态】"-게 하다"表示使役，即“让某人做某事”。"가다"（去）→"가게 하다"（让……去）。“엄마가 나를 학교에 가게 했다”=妈妈让我去学校。相当于英语的"make someone do"。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_001_002',
         type: 'multiple-choice',
-        question: '-게 하다는 무엇을 나타내나요?',
+        question: '-게 하다는 무엇을 나타내나요? (-게 하다 表示什么含义？)',
         options: [
-          { text: '누군가에게 어떤 행동을 하도록 시키는 것', correct: true },
-          { text: '자연스럽게 변하는 것', correct: false },
-          { text: '능력이 있다는 것', correct: false }
+          { text: '누군가에게 어떤 행동을 하도록 시키는 것（让某人做某动作）', correct: true },
+          { text: '자연스럽게 변하는 것（自然地发生变化）', correct: false },
+          { text: '능력이 있다는 것（具备某种能力）', correct: false },
+          { text: '과거의 행동을 회상하는 것（回忆过去的动作）', correct: false }
         ],
         explanation: '【使役意义】"-게 하다"是使役表达，表示"主体让别人做某动作"。与"스스로 하다"（自己做）相区别，使役强调是让其他人去做。',
         source: 'TOPIK Level 2'
@@ -1101,57 +1102,64 @@ export const practiceDatabase = {
       {
         id: 'int_001_003',
         type: 'multiple-choice',
-        question: '선생님이 학생들을 공부하___했습니다.',
+        question: '선생님이 학생들을 공부하___했습니다. (老师让学生们学习。)',
         options: [
           { text: '게', correct: true },
           { text: '고', correct: false },
           { text: '러', correct: false },
           { text: '도록', correct: false }
         ],
-        explanation: '【动词使役化】任何动词都可以用"-게 하다"变成使役形。"공부하다"（学习）→"공부하게 하다"（让....学习）。“선생님이 학생들을 공부하게 했다”=老师让学生们学习。',
+        explanation: '【动词使役化】任何动词都可以用"-게 하다"变成使役形。"공부하다"（学习）→"공부하게 하다"（让……学习）。“선생님이 학생들을 공부하게 했다”=老师让学生们学习。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_001_004',
         type: 'multiple-choice',
-        question: '다음 중 -게 하다를 올바르게 사용한 문장은?',
+        question: '다음 중 -게 하다를 올바르게 사용한 문장은? (下列哪句是-게 하다的正确用法？)',
         options: [
           { text: '부모님이 저를 공부하게 했어요.', correct: true },
           { text: '부모님이 저가 공부하게 했어요.', correct: false },
-          { text: '부모님이 저를 공부게 했어요.', correct: false }
+          { text: '부모님이 저를 공부게 했어요.', correct: false },
+          { text: '부모님이 저를 공부하하게 했어요.', correct: false }
         ],
-        explanation: '【格式固定】使役形格式：“名词+를/을+动词+게 하다”。正确："나를 공부하게 했다"。错误："나가 공부하게 했다"（用主格가）、"나를 공부게 했다"（漏了하）。',
+        explanation: '【格式固定】使役形格式：“名词+를/을+动词+게 하다”。正确："나를 공부하게 했다"。错误："나가 공부하게 했다"（用主格가）、"나를 공부게 했다"（漏了하）、"나를 공부하하게 했다"（多余的하）。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_001_005',
-        type: 'translation',
-        question: '번역: 아버지가 저를 연습하게 했어요.',
-        expectedKorean: '아버지가 저를 연습하게 했어요',
-        chineseMeaning: '父亲让我练习。',
+        type: 'multiple-choice',
+        question: '아버지가 저를 연습하게 했어요.의 중국어 번역은? (“아버지가 저를 연습하게 했어요.”的中文翻译是？)',
+        options: [
+          { text: '父亲让我练习。', correct: true },
+          { text: '父亲我练习了。', correct: false },
+          { text: '父亲和我一起练习。', correct: false },
+          { text: '父亲喜欢我练习。', correct: false }
+        ],
         explanation: '【使役形结构】使役句结构：“~에게 ....하게 하다”。“아버지가 저를 연습하게 했다”=父亲让我练习。注意：被使役的人用宾格"를/을"，不用主格"이/가"。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_001_006',
         type: 'multiple-choice',
-        question: '의사가 환자에게 약을___했어요.',
+        question: '의사가 환자에게 약을___했어요. (医生让病人吃药。)',
         options: [
           { text: '먹게', correct: true },
           { text: '먹', correct: false },
           { text: '먹도록', correct: false },
           { text: '먹으러', correct: false }
         ],
-        explanation: '【使役动词例】医疗场景中的使役。"먹다"（吃）→"먹게 하다"（让....吃）。“의사가 환자에게 약을 먹게 했다”=医生让病人吃药。',
+        explanation: '【使役动词例】医疗场景中的使役。"먹다"（吃）→"먹게 하다"（让……吃）。“의사가 환자에게 약을 먹게 했다”=医生让病人吃药。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_001_007',
-        type: 'context-judgment',
-        question: '-게 하다와 -게 되다의 뜻이 같나요?',
+        type: 'multiple-choice',
+        question: '-게 하다와 -게 되다의 뜻이 같나요? (-게 하다和-게 되다的意思相同吗？)',
         options: [
-          { text: '아니오, -게 하다는 능동, -게 되다는 피동', correct: true },
-          { text: '네, 같은 의미입니다', correct: false }
+          { text: '아니오, -게 하다는 사역, -게 되다는 변화（不，-게 하다是使役，-게 되다是变化）', correct: true },
+          { text: '네, 같은 의미입니다（是，意思相同）', correct: false },
+          { text: '아니오, -게 하다는 가능성, -게 되다는 의무（不，-게 하다是可能性，-게 되다是义务）', correct: false },
+          { text: '아니오, -게 하다는 과거, -게 되다는 미래（不，-게 하다是过去，-게 되다是未来）', correct: false }
         ],
         explanation: '-게 하다는 "~하게 하다(사역)", -게 되다는 "자연스럽게 ~되다(변화)"의 의미로 다릅니다.',
         source: 'TOPIK Level 2'
@@ -1159,14 +1167,14 @@ export const practiceDatabase = {
       {
         id: 'int_001_008',
         type: 'multiple-choice',
-        question: '선생님이 우리에게 한국말을___했어요.',
+        question: '선생님이 우리에게 한국말을___했어요. (老师让我们学韩语。)',
         options: [
           { text: '배우게', correct: true },
           { text: '배우', correct: false },
           { text: '배우도록', correct: false },
           { text: '배워', correct: false }
         ],
-        explanation: '【学习使役】教育场景中的使役表达。"배우다"（学）→"배우게 하다"（让....学）。“선생님이 우리에게 한국말을 배우게 했다”=老师让我们学韩语。',
+        explanation: '【学习使役】教育场景中的使役表达。"배우다"（学）→"배우게 하다"（让……学）。“선생님이 우리에게 한국말을 배우게 했다”=老师让我们学韩语。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1174,24 +1182,25 @@ export const practiceDatabase = {
       {
         id: 'int_002_001',
         type: 'multiple-choice',
-        question: '공부하___데 어려워요.',
+        question: '공부하___데 어려워요. (学习起来很难。)',
         options: [
           { text: '는', correct: true },
           { text: '은', correct: false },
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '【过程难度】"-는 데"表示做某事的过程或难度。"공부하는 데 어려워요"=学习很难/学起来难。相当于中文的"在....方面"或"在....过程中"。',
+        explanation: '【过程难度】"-는 데"表示做某事的过程或难度。"공부하는 데 어려워요"=学习很难/学起来难。相当于中文的"在……方面"或"在……过程中"。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_002_002',
         type: 'multiple-choice',
-        question: '-는 데는 어떤 의미인가요?',
+        question: '-는 데는 어떤 의미인가요? (-는 데 表示什么含义？)',
         options: [
-          { text: '어떤 행동을 하는 과정이나 그것이 어려운 정도', correct: true },
-          { text: '행동이 끝났다는 의미', correct: false },
-          { text: '행동을 할 수 있다는 의미', correct: false }
+          { text: '어떤 행동을 하는 과정이나 그것이 어려운 정도（动作的过程或难度）', correct: true },
+          { text: '행동이 끝났다는 의미（动作完成）', correct: false },
+          { text: '행동을 할 수 있다는 의미（能够做动作）', correct: false },
+          { text: '행동의 목적을 나타냄（动作的目的）', correct: false }
         ],
         explanation: '【"-는 데"的意义】表示动作过程或过程中的难度、时间等。“공부하는 데 시간이 걸린다”=学习需要花时间。区别于结果（-는 것），强调过程。',
         source: 'TOPIK Level 2'
@@ -1199,57 +1208,64 @@ export const practiceDatabase = {
       {
         id: 'int_002_003',
         type: 'multiple-choice',
-        question: '한국어를 배우___데 3개월이 걸렸어요.',
+        question: '한국어를 배우___데 3개월이 걸렸어요. (学习韩语花了3个月。)',
         options: [
           { text: '는', correct: true },
           { text: '은', correct: false },
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '【花费时间】"-는 데"常表示做某事需要的时间。"배우는 데 3개월이 걸렸다"=学习花了3个月。相当于"在....上花了...时间"。',
+        explanation: '【花费时间】"-는 데"常表示做某事需要的时间。"배우는 데 3개월이 걸렸다"=学习花了3个月。相当于"在……上花了…时间"。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_002_004',
         type: 'multiple-choice',
-        question: '다음 중 -는 데를 올바르게 사용한 문장은?',
+        question: '다음 중 -는 데를 올바르게 사용한 문장은? (下列哪句是-는 데的正确用法？)',
         options: [
           { text: '이 일을 하는 데 도움이 필요해요.', correct: true },
           { text: '이 일을 한 데 도움이 필요해요.', correct: false },
-          { text: '이 일을 할 데 도움이 필요해요.', correct: false }
+          { text: '이 일을 할 데 도움이 필요해요.', correct: false },
+          { text: '이 일을 하던 데 도움이 필요해요.', correct: false }
         ],
-        explanation: '【现在进行形】"-는 데"必须用现在进行形"-는"。正确："하는 데"。错误："한 데"（过去式）、"할 데"（未来式）。表示正在做或要做的事。',
+        explanation: '【现在进行形】"-는 데"必须用现在进行形"-는"。正确："하는 데"。错误："한 데"（过去式）、"할 데"（未来式）、"하던 데"（过去持续式）。表示正在做或要做的事。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_002_005',
-        type: 'translation',
-        question: '번역: 일하는 데 시간이 많이 걸려요.',
-        expectedKorean: '일하는 데 시간이 많이 걸려요',
-        chineseMeaning: '工作需要花很多时间。',
+        type: 'multiple-choice',
+        question: '일하는 데 시간이 많이 걸려요.의 중국어 번역은?（“일하는 데 시간이 많이 걸려요.”的中文翻译是？）',
+        options: [
+          { text: '工作需要花很多时间。', correct: true },
+          { text: '工作结束花了很多时间。', correct: false },
+          { text: '工作的目的是花时间。', correct: false },
+          { text: '工作能花很多时间。', correct: false }
+        ],
         explanation: '【需要时间/资源】"-는 데"表示做某事需要的时间或资源。"일하는 데 시간이 많이 걸린다"=工作需要花很多时间。强调过程中的消耗。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_002_006',
         type: 'multiple-choice',
-        question: '숙제를 마치___데 2시간이 걸렸어요.',
+        question: '숙제를 마치___데 2시간이 걸렸어요. (完成作业花了2小时。)',
         options: [
           { text: '는', correct: true },
           { text: '은', correct: false },
           { text: '을', correct: false },
           { text: '던', correct: false }
         ],
-        explanation: '【花费时间表达】"-는 데 2시간이 걸렸다"=花了2小时。"숙제를 마치는 데 2시간"=完成作业需舱2小时。这是非常实用的表达！',
+        explanation: '【花费时间表达】"-는 데 2시간이 걸렸다"=花了2小时。"숙제를 마치는 데 2시간"=完成作业需要2小时。这是非常实用的表达！',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_002_007',
-        type: 'context-judgment',
-        question: '-는 데와 -는 것이 같은 의미인가요?',
+        type: 'multiple-choice',
+        question: '-는 데와 -는 것이 같은 의미인가요? (-는 데和-는 것意思相同吗？)',
         options: [
-          { text: '아니오, -는 데는 과정을, -는 것은 결과를 나타냅니다', correct: true },
-          { text: '네, 같은 의미입니다', correct: false }
+          { text: '아니오, -는 데는 과정을, -는 것은 결과를 나타냅니다（不，-는 데表过程，-는 것表结果）', correct: true },
+          { text: '네, 같은 의미입니다（是，意思相同）', correct: false },
+          { text: '아니오, -는 데는 목적을, -는 것은 원인을 나타냅니다（不，-는 데表目的，-는 것表原因）', correct: false },
+          { text: '아니오, -는 데는 가능성을, -는 것은 의무를 나타냅니다（不，-는 데表可能性，-는 것表义务）', correct: false }
         ],
         explanation: '【"-는 데"vs"-는 것"】"-는 데"强调过程，"-는 것"强调结果。“공부하는 데 어렵다”（学习过程难）≠“공부하는 것이 어렵다”（学习这件事难）。',
         source: 'TOPIK Level 2'
@@ -1257,7 +1273,7 @@ export const practiceDatabase = {
       {
         id: 'int_002_008',
         type: 'multiple-choice',
-        question: '이 음식을 요리하___데 어려워요.',
+        question: '이 음식을 요리하___데 어려워요. (这道菜做起来很难。)',
         options: [
           { text: '는', correct: true },
           { text: '은', correct: false },
@@ -1272,7 +1288,7 @@ export const practiceDatabase = {
       {
         id: 'int_003_001',
         type: 'multiple-choice',
-        question: '건강하___운동해요.',
+        question: '건강하___운동해요. (为了健康而运动。)',
         options: [
           { text: '도록', correct: true },
           { text: '게', correct: false },
@@ -1285,11 +1301,12 @@ export const practiceDatabase = {
       {
         id: 'int_003_002',
         type: 'multiple-choice',
-        question: '-도록의 주요 의미는?',
+        question: '-도록의 주요 의미는? (-도록 的主要含义是？)',
         options: [
-          { text: '목적(~하기 위해) 또는 결과(~하게 하다)', correct: true },
-          { text: '원인(~때문에)', correct: false },
-          { text: '조건(~하면)', correct: false }
+          { text: '목적(~하기 위해) 또는 결과(~하게 하다)（目的或结果）', correct: true },
+          { text: '원인(~때문에)（原因）', correct: false },
+          { text: '조건(~하면)（条件）', correct: false },
+          { text: '대비(~에도 불구하고)（对比）', correct: false }
         ],
         explanation: '【"-도록"的主要意义】①目的："为了..."。②结果："使得..."/"让..."。比如"늘지 않도록 빨리 오다"（为了不迟到而快来）是目的；"모든 사람이 알도록 하다"（让所有人知道）是结果。',
         source: 'TOPIK Level 2'
@@ -1297,41 +1314,46 @@ export const practiceDatabase = {
       {
         id: 'int_003_003',
         type: 'multiple-choice',
-        question: '늦지 않___빨리 왔어요.',
+        question: '늦지 않___빨리 왔어요. (为了不迟到就早来了。)',
         options: [
           { text: '도록', correct: true },
           { text: '게', correct: false },
           { text: '려고', correct: false },
           { text: '고', correct: false }
         ],
-        explanation: '늦지 않도록 빨리 왔다 = 늦지 않기 위해 빨리 왔다 (목적)',
+        explanation: '늦지 않도록 빨리 왔다 = 늦지 않기 위해 빨리 왔다 (목적)，"-도록"在此处表示动作的目的，即“为了不迟到而早来”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_003_004',
         type: 'multiple-choice',
-        question: '다음 중 -도록을 올바르게 사용한 문장은?',
+        question: '다음 중 -도록을 올바르게 사용한 문장은? (下列哪句是-도록的正确用法？)',
         options: [
           { text: '전학교 학생에게 이 소식을 알리도록 하겠습니다.', correct: true },
           { text: '전학교 학생에게 이 소식을 알리 도록 하겠습니다.', correct: false },
-          { text: '전학교 학생에게 이 소식을 알도록 하겠습니다.', correct: false }
+          { text: '전학교 학생에게 이 소식을 알도록 하겠습니다.', correct: false },
+          { text: '전학교 학생에게 이 소식을 알리도록 하겠어요.', correct: true }
         ],
-        explanation: '【连接在词干上】"-도록"直接接在动词或形容词词干后。正确："알리도록"（通知）。错误："알리 도록"（分开写）、"알도록"（缺少词尾）。不能分开写！',
+        explanation: '【连接在词干上】"-도록"直接接在动词或形容词词干后。正确："알리도록"（通知）、"알리도록 하겠어요"（口语化正确形式）。错误："알리 도록"（分开写）、"알도록"（缺少词尾）。不能分开写！',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_003_005',
-        type: 'translation',
-        question: '번역: 다시 오지 않도록 지금 해결하세요.',
-        expectedKorean: '다시 오지 않도록 지금 해결하세요',
-        chineseMeaning: '现在解决，以免再出现。',
+        type: 'multiple-choice',
+        question: '다시 오지 않도록 지금 해결하세요.의 중국어 번역은?（“다시 오지 않도록 지금 해결하세요.”的中文翻译是？）',
+        options: [
+          { text: '现在解决，以免再出现。', correct: true },
+          { text: '现在解决，然后再出现。', correct: false },
+          { text: '现在解决，因为再出现。', correct: false },
+          { text: '现在解决，如果再出现。', correct: false }
+        ],
         explanation: '【目的表达应用】"-도록"常用于表达行为目的。"다시 오지 않도록 해결하다"=解决以免再来/解决以免再出现。强调解决问题的目的是防止再次出现。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_003_006',
         type: 'multiple-choice',
-        question: '학교에 가___짐을 챙겨야 해요.',
+        question: '학교에 가___짐을 챙겨야 해요. (为了去学校要收拾行李。)',
         options: [
           { text: '도록', correct: true },
           { text: '게', correct: false },
@@ -1343,11 +1365,13 @@ export const practiceDatabase = {
       },
       {
         id: 'int_003_007',
-        type: 'context-judgment',
-        question: '-도록과 -게 하다가 같은 의미로 사용될 수 있나요?',
+        type: 'multiple-choice',
+        question: '-도록과 -게 하다가 같은 의미로 사용될 수 있나요? (-도록和-게 하다能表示相同含义吗？)',
         options: [
-          { text: '네, 때로는 비슷한 의미로 사용될 수 있습니다', correct: true },
-          { text: '아니오, 완전히 다른 의미입니다', correct: false }
+          { text: '네, 때로는 비슷한 의미로 사용될 수 있습니다（是，有时可表示相似含义）', correct: true },
+          { text: '아니오, 완전히 다른 의미입니다（不，含义完全不同）', correct: false },
+          { text: '네, 항상 같은 의미로 사용됩니다（是，总是表示相同含义）', correct: false },
+          { text: '아니오, 문법적 사용 위치가 다릅니다（不，语法使用位置不同）', correct: false }
         ],
         explanation: '【"-도록"vs"-게 하다"】两者有时可替换但有微妙差异。“모든 사람이 알도록 하다”≈“모든 사람이 알게 하다”（让所有人知道）。前者强调目的，后者强调使役。',
         source: 'TOPIK Level 2'
@@ -1355,7 +1379,7 @@ export const practiceDatabase = {
       {
         id: 'int_003_008',
         type: 'multiple-choice',
-        question: '실패하지 않___노력해야 해요.',
+        question: '실패하지 않___노력해야 해요. (为了不失败要努力。)',
         options: [
           { text: '도록', correct: true },
           { text: '게', correct: false },
@@ -1370,7 +1394,7 @@ export const practiceDatabase = {
       {
         id: 'int_010_001',
         type: 'multiple-choice',
-        question: '비가 와___그냥 간다.',
+        question: '비가 와___그냥 간다. (即使下雨，还是要去。)',
         options: [
           { text: '도', correct: true },
           { text: '서', correct: false },
@@ -1382,16 +1406,21 @@ export const practiceDatabase = {
       },
       {
         id: 'int_010_002',
-        type: 'grammar-comparison',
-        question: '-도와 -어도/-아도의 차이',
-        optionA: '-도: 모든 단어 뒤에 추가하여 "비록, 그럼에도 불구하고"를 나타냄',
-        optionB: '-어도/-아도: 동사에 사용되며, 어간 끝음에 따라 선택',
-        explanation: '두 표현 모두 대조를 나타내지만, 문법적 기능과 사용법이 약간 다름.'
+        type: 'multiple-choice',
+        question: '-도와 -어도/-아도의 차이는? (-도和-어도/-아도的区别是？)',
+        options: [
+          { text: '-도: 명사 후에 사용, -어도/-아도: 동사/형용사 후에 사용（-도接名词，-어도/-아도接动词/形容词）', correct: true },
+          { text: '-도: 모든 단어 뒤에 추가하여 "비록"을 나타냄（-도接所有词表“虽然”）', correct: false },
+          { text: '-어도/-아도: 명사 후에 사용하며 대조를 나타냄（-어도/-아도接名词表对比）', correct: false },
+          { text: '-도와 -어도/-아도는 차이가 없다（-도和-어도/-아도没有区别）', correct: false }
+        ],
+        explanation: '두 표현 모두 대조를 나타내지만，문법적 기능과 사용법이 약간 다름。-도主要接在名词后表“也、即使”，-어도/-아도接在动词/形容词词干后表让步转折。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_010_003',
         type: 'multiple-choice',
-        question: '열심히 공부해___시험에 떨어졌다.',
+        question: '열심히 공부해___시험에 떨어졌다. (即使努力学习，还是没通过考试。)',
         options: [
           { text: '도', correct: true },
           { text: '서', correct: false },
@@ -1404,28 +1433,33 @@ export const practiceDatabase = {
       {
         id: 'int_010_004',
         type: 'multiple-choice',
-        question: '다음 중 올바른 문장은?',
+        question: '다음 중 올바른 문장은? (下列哪句是正确的？)',
         options: [
           { text: '아무리 노력해도 안 된다', correct: true },
           { text: '아무리 노력어도 안 된다', correct: false },
-          { text: '아무리 노력아도 안 된다', correct: false }
+          { text: '아무리 노력아도 안 된다', correct: false },
+          { text: '아무리 노력하고도 안 된다', correct: false }
         ],
         explanation: '【动词转折形】动词后加"-어도/아도"。"노력하다"（努力）→"노력해도"（虽然努力）。"아무리 노력해도 안 된다"=无论怎么努力都不行。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_010_005',
-        type: 'context-judgment',
-        question: '"아무리 돈이 많아도 행복하지 않다"에서 -어도는 무엇을 나타내나요?',
+        type: 'multiple-choice',
+        question: '"아무리 돈이 많아도 행복하지 않다"에서 -어도는 무엇을 나타내나요?（在“아무리 돈이 많아도 행복하지 않다”中，-어도表示什么？）',
         options: [
-          { text: '대조, 돈이 많아도...', correct: true },
-          { text: '원인', correct: false }
+          { text: '대조, 돈이 많아도 행복하지 않음（对比，有钱也不幸福）', correct: true },
+          { text: '원인, 돈이 많아서 행복하지 않음（原因，因为有钱所以不幸福）', correct: false },
+          { text: '조건, 돈이 많으면 행복하지 않음（条件，有钱的话就不幸福）', correct: false },
+          { text: '목적, 돈이 많게 하여 행복하지 않음（目的，让有钱所以不幸福）', correct: false }
         ],
         explanation: '【转折关系】"-어도"表示转折或对比。"돈이 많아도 행복하지 않다"=虽然钱多，但不幸福。表示有钱和幸福之间没有必然联系。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_010_006',
         type: 'multiple-choice',
-        question: '몇 번을 말해___듣지 않는다.',
+        question: '몇 번을 말해___듣지 않는다. (说了好几次也不听。)',
         options: [
           { text: '도', correct: true },
           { text: '서', correct: false },
@@ -1437,16 +1471,21 @@ export const practiceDatabase = {
       },
       {
         id: 'int_010_007',
-        type: 'translation',
-        question: '번역: 비가 와도 우리는 간다.',
-        expectedKorean: '비가 와도 우리는 간다',
-        chineseMeaning: '비가 와도 우리는 간다.',
-        explanation: '-도는 대조/허용 표현으로, 어떤 일이 일어나도 결과가 바뀌지 않음을 나타냅니다.'
+        type: 'multiple-choice',
+        question: '비가 와도 우리는 간다.의 중국어 번역은?（“비가 와도 우리는 간다.”的中文翻译是？）',
+        options: [
+          { text: '即使下雨，我们也要去。', correct: true },
+          { text: '因为下雨，我们要去。', correct: false },
+          { text: '如果下雨，我们要去。', correct: false },
+          { text: '下雨之后，我们要去。', correct: false }
+        ],
+        explanation: '-도는 대조/허용 표현으로，어떤 일이 일어나도 결과가 바뀌지 않음을 나타냅니다。即-어도表示让步，即使发生某事，结果也不变。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_010_008',
         type: 'multiple-choice',
-        question: '실패해___다시 시도해야 한다.',
+        question: '실패해___다시 시도해야 한다. (即使失败，也要再次尝试。)',
         options: [
           { text: '도', correct: true },
           { text: '서', correct: false },
@@ -1461,7 +1500,7 @@ export const practiceDatabase = {
       {
         id: 'int_011_001',
         type: 'multiple-choice',
-        question: '나는 지금 공부하___중이다.',
+        question: '나는 지금 공부하___중이다. (我现在正在学习。)',
         options: [
           { text: '는', correct: true },
           { text: '한', correct: false },
@@ -1474,18 +1513,20 @@ export const practiceDatabase = {
       {
         id: 'int_011_002',
         type: 'multiple-choice',
-        question: '-는 중이다는 무엇을 나타내나요?',
+        question: '-는 중이다는 무엇을 나타내나요? (-는 중이다 表示什么？)',
         options: [
-          { text: '진행 중인 행동', correct: true },
-          { text: '과거의 행동', correct: false },
-          { text: '미래의 계획', correct: false }
+          { text: '진행 중인 행동（正在进行的动作）', correct: true },
+          { text: '과거의 행동（过去的动作）', correct: false },
+          { text: '미래의 계획（未来的计划）', correct: false },
+          { text: '완료된 행동（完成的动作）', correct: false }
         ],
         explanation: '【进行状态】"-는 중이다"表示正在进行的状态。区别于过去（-했다）或未来（-할 것이다），强调此刻正在进行中。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_011_003',
         type: 'multiple-choice',
-        question: '영화가 지금 상영되___중이다.',
+        question: '영화가 지금 상영되___중이다. (电影现在正在上映。)',
         options: [
           { text: '는', correct: true },
           { text: '된', correct: false },
@@ -1497,57 +1538,67 @@ export const practiceDatabase = {
       },
       {
         id: 'int_011_004',
-        type: 'context-judgment',
-        question: '"나는 밥을 먹는 중이다"가 지금 밥을 먹고 있다는 것을 나타내나요?',
+        type: 'multiple-choice',
+        question: '"나는 밥을 먹는 중이다"가 지금 밥을 먹고 있다는 것을 나타내나요?（“나는 밥을 먹는 중이다”表示现在正在吃饭吗？）',
         options: [
-          { text: '네', correct: true },
-          { text: '아니오', correct: false }
+          { text: '네, 진행 중임을 나타냅니다（是，表示正在进行）', correct: true },
+          { text: '아니오, 과거를 나타냅니다（不，表示过去）', correct: false },
+          { text: '아니오, 미래를 나타냅니다（不，表示未来）', correct: false },
+          { text: '아니오, 완료를 나타냅니다（不，表示完成）', correct: false }
         ],
-        explanation: '-는 중이다는 행동이 진행 중임을 나타냅니다.'
+        explanation: '-는 중이다는 행동이 진행 중임을 나타냅니다。即该语法专门表示动作正在进行中。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_011_005',
-        type: 'translation',
-        question: '번역: 그는 지금 일하는 중이다.',
-        expectedKorean: '그는 지금 일하는 중이다',
-        chineseMeaning: '그는 지금 일하는 중이다.',
-        explanation: '-는 중이다는 행동이 진행 중인 상태를 강조합니다.'
+        type: 'multiple-choice',
+        question: '그는 지금 일하는 중이다.의 중국어 번역은?（“그는 지금 일하는 중이다.”的中文翻译是？）',
+        options: [
+          { text: '他现在正在工作。', correct: true },
+          { text: '他现在工作完了。', correct: false },
+          { text: '他现在要工作。', correct: false },
+          { text: '他现在没工作。', correct: false }
+        ],
+        explanation: '-는 중이다는 행동이 진행 중인 상태를 강조합니다。即强调动作处于正在进行的状态。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_011_006',
         type: 'multiple-choice',
-        question: '회의가 진행되___중이니 조용히 하세요.',
+        question: '회의가 진행되___중이니 조용히 하세요. (会议正在进行，请安静。)',
         options: [
           { text: '는', correct: true },
           { text: '된', correct: false },
           { text: '될', correct: false },
           { text: '됐던', correct: false }
         ],
-        explanation: '진행되다 → 진행되는 중이다',
+        explanation: '진행되다 → 진행되는 중이다，"-는 중이다"接在动词词干后，需要使用现在进行时词尾-는，因此正确形式是진행되는 중이다。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_011_007',
         type: 'multiple-choice',
-        question: '다음 중 올바른 형태는?',
+        question: '다음 중 올바른 형태는? (下列哪项是正确形式？)',
         options: [
           { text: '공부하는 중이다', correct: true },
           { text: '공부한 중이다', correct: false },
-          { text: '공부할 중이다', correct: false }
+          { text: '공부할 중이다', correct: false },
+          { text: '공부했던 중이다', correct: false }
         ],
-        explanation: '필수적으로 현재 진행형 -는을 사용해야 합니다.'
+        explanation: '필수적으로 현재 진행형 -는을 사용해야 합니다。即-는 중이다必须搭配现在进行时词尾-는，不能使用过去式、未来式等。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_011_008',
         type: 'multiple-choice',
-        question: '아이가 밥을 먹___중이다.',
+        question: '아이가 밥을 먹___중이다. (孩子正在吃饭。)',
         options: [
           { text: '는', correct: true },
           { text: '은', correct: false },
           { text: '을', correct: false },
           { text: '었던', correct: false }
         ],
-        explanation: '먹다 → 먹는 중이다',
+        explanation: '먹다 → 먹는 중이다，"-는 중이다"接在动词먹다后，需要使用-는词尾，构成먹는 중이다表示“正在吃饭”。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1555,92 +1606,105 @@ export const practiceDatabase = {
       {
         id: 'int_012_001',
         type: 'multiple-choice',
-        question: '내일 날씨가 좋___요.',
+        question: '내일 날씨가 좋___요. (明天天气应该会好。)',
         options: [
           { text: '겠어', correct: true },
           { text: '아요', correct: false },
           { text: '을', correct: false },
           { text: '은', correct: false }
         ],
-        explanation: '좋다 → 좋겠어요 (추측)',
+        explanation: '좋다 → 좋겠어요 (추측)，-겠어요接在形容词词干后，表示对未来的推测，意为“应该会……”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_002',
         type: 'multiple-choice',
-        question: '-겠-는 무엇을 나타내나요?',
+        question: '-겠-는 무엇을 나타내나요? (-겠- 表示什么？)',
         options: [
-          { text: '화자의 의지나 추측', correct: true },
-          { text: '과거 사실', correct: false },
-          { text: '명령', correct: false }
+          { text: '화자의 의지나 추측（说话人的意志或推测）', correct: true },
+          { text: '과거 사실（过去的事实）', correct: false },
+          { text: '명령（命令）', correct: false },
+          { text: '완료（完成）', correct: false }
         ],
-        explanation: '-겠-은 미래의 의지나 추측을 나타냅니다.'
+        explanation: '-겠-은 미래의 의지나 추측을 나타냅니다。即-겠-可以表示说话人对未来的意志或推测。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_003',
         type: 'multiple-choice',
-        question: '나는 너를 도와___것이다.',
+        question: '나는 너를 도와___것이다. (我会帮助你的。)',
         options: [
           { text: '줄', correct: true },
           { text: '주', correct: false },
           { text: '줌', correct: false },
           { text: '준', correct: false }
         ],
-        explanation: '도와주다 → 도와줄 것이다 (약속/의지)',
+        explanation: '도와주다 → 도와줄 것이다 (약속/의지)，-을/ㄹ 것이다接在动词词干后，表示未来的意志或承诺，도와주다的词干是도와주，变形成도와줄 것이다。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_004',
-        type: 'context-judgment',
-        question: '"그는 올 거야"는 확실한 미래를 나타내나요?',
+        type: 'multiple-choice',
+        question: '"그는 올 거야"는 확실한 미래를 나타내나요?（“그는 올 거야”表示确定的未来吗？）',
         options: [
-          { text: '아니오, 가능성을 나타냄', correct: true },
-          { text: '네', correct: false }
+          { text: '아니오, 가능성을 나타냄（不，表示可能性）', correct: true },
+          { text: '네, 확실한 미래를 나타냄（是，表示确定的未来）', correct: false },
+          { text: '아니오, 과거를 나타냄（不，表示过去）', correct: false },
+          { text: '네, 명령의 의미를 나타냄（是，表示命令）', correct: false }
         ],
-        explanation: '-ㄹ 것이다는 확실한 미래보다는 추측을 나타냅니다.'
+        explanation: '-ㄹ 것이다는 확실한 미래보다는 추측을 나타냅니다。即-ㄹ 것이다更多表示推测，而非确定的未来事实。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_005',
-        type: 'translation',
-        question: '번역: 나는 너를 도와줄 것이다.',
-        expectedKorean: '나는 너를 도와줄 것이다',
-        chineseMeaning: '我会帮助你。',
-        explanation: '-ㄹ 것이다는 약속이나 의지의 미래를 나타냅니다.'
+        type: 'multiple-choice',
+        question: '나는 너를 도와줄 것이다.의 중국어 번역은?（“나는 너를 도와줄 것이다.”的中文翻译是？）',
+        options: [
+          { text: '我会帮助你。', correct: true },
+          { text: '我帮助了你。', correct: false },
+          { text: '我要帮助你吗？', correct: false },
+          { text: '我不帮助你。', correct: false }
+        ],
+        explanation: '-ㄹ 것이다는 약속이나 의지의 미래를 나타냅니다。即该语法表示未来的承诺或意志，因此翻译为“我会帮助你”。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_006',
         type: 'multiple-choice',
-        question: '그 일은 어렵___거야.',
+        question: '그 일은 어렵___거야. (那事应该会很难。)',
         options: [
           { text: '울', correct: true },
           { text: '을', correct: false },
           { text: '겠', correct: false },
           { text: '는', correct: false }
         ],
-        explanation: '어렵다 → 어려울 거야 (추측)',
+        explanation: '어렵다 → 어려울 거야 (추측)，形容词어렵다变形成어려울 거야，表示对事物的推测，意为“应该会难”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_007',
         type: 'multiple-choice',
-        question: '다음 중 올바른 문장은?',
+        question: '다음 중 올바른 문장은? (下列哪句是正确的？)',
         options: [
           { text: '내일 비가 올 것 같아', correct: true },
-          { text: '내일 비가 올 거 같아', correct: false }
+          { text: '내일 비가 올 거 같아', correct: false },
+          { text: '내일 비가 오는 것 같아', correct: false },
+          { text: '내일 비가 오거 같아', correct: false }
         ],
-        explanation: '-ㄹ 것 같다는 "을/ㄹ"을 사용합니다.'
+        explanation: '-ㄹ 것 같다는 "을/ㄹ"을 사용합니다。正确形式是-ㄹ/을 것 같아，表示推测，错误形式올 거 같아是口语中的不规范用法，正式场合不使用。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_012_008',
         type: 'multiple-choice',
-        question: '이 문제는 어렵___요.',
+        question: '이 문제는 어렵___요. (这道题应该很难。)',
         options: [
           { text: '겠어', correct: true },
           { text: '어요', correct: false },
           { text: '을', correct: false },
           { text: '울', correct: false }
         ],
-        explanation: '어렵다 → 어렵겠어요 (추측)',
+        explanation: '어렵다 → 어렵겠어요 (추측)，-겠어요接在形容词어렵다后，表示推测，意为“应该很难”。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1648,93 +1712,105 @@ export const practiceDatabase = {
       {
         id: 'int_013_001',
         type: 'multiple-choice',
-        question: '피곤해___못 갔어.',
+        question: '피곤해___못 갔어. (因为累了，所以没去。)',
         options: [
           { text: '서', correct: true },
           { text: '도', correct: false },
           { text: '니까', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '피곤하다 → 피곤해서 (원인/이유)',
+        explanation: '피곤하다 → 피곤해서 (원인/이유)，-아/어서接在形容词词干后，表示原因，意为“因为累了”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_002',
         type: 'multiple-choice',
-        question: '-아/어서 vs -기 때문에의 차이는?',
+        question: '-아/어서 vs -기 때문에의 차이는? (-아/어서和-기 때문에的区别是？)',
         options: [
-          { text: '-아/어서가 더 자연스럽고 일상적', correct: true },
-          { text: '-기 때문에가 더 일상적', correct: false }
+          { text: '-아/어서가 더 자연스럽고 일상적，-기 때문에가 공식적（-아/어서更自然日常，-기 때문에更正式）', correct: true },
+          { text: '-기 때문에가 더 일상적（-기 때문에更日常）', correct: false },
+          { text: '-아/어서가 공식적이고 -기 때문에가 구어체（-아/어서更正式，-기 때문에是口语）', correct: false },
+          { text: '두 표현은 차이가 없다（两个表达没有区别）', correct: false }
         ],
-        explanation: '-아/어서는 가장 자연스럽고, -기 때문에는 가장 공식적입니다.'
+        explanation: '-아/어서는 가장 자연스럽고，-기 때문에는 가장 공식적입니다。即-아/어서用于日常口语，-기 때문에用于正式场合或书面语。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_003',
         type: 'multiple-choice',
-        question: '시간이 없으___까 못 간다.',
+        question: '시간이 없으___까 못 간다. (因为没时间，所以不能去。)',
         options: [
           { text: '니', correct: true },
           { text: '서', correct: false },
           { text: '도', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '없다 → 없으니까 (원인)',
+        explanation: '없다 → 없으니까 (원인)，-으니까接在形容词없다后，表示原因，意为“因为没有”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_004',
-        type: 'context-judgment',
-        question: '"돈이 없으니까 못 산다"에서 어느 표현이 가장 자연스러워요?',
+        type: 'multiple-choice',
+        question: '"돈이 없으니까 못 산다"에서 어느 표현이 가장 자연스러워요?（在“돈이 없으니까 못 산다”中，哪个表达最自然？）',
         options: [
-          { text: '-아/어서', correct: true },
-          { text: '-으니까', correct: false },
-          { text: '-기 때문에', correct: false }
+          { text: '-아/어서（돈이 없어서）', correct: true },
+          { text: '-으니까（돈이 없으니까）', correct: true },
+          { text: '-기 때문에（돈이 없기 때문에）', correct: false },
+          { text: '-면（돈이 없으면）', correct: false }
         ],
-        explanation: '세 표현 모두 가능하지만 -아/어서가 가장 자연스럽습니다.'
+        explanation: '세 표현 모두 가능하지만 -아/어서와 -으니까가 일상에서 더 자연스럽습니다。-기 때문에相对正式，在日常口语中使用돈이 없어서/없으니까更自然。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_005',
-        type: 'translation',
-        question: '번역: 시간이 없기 때문에 갈 수 없었다.',
-        expectedKorean: '시간이 없기 때문에 갈 수 없었다',
-        chineseMeaning: '因为没有时间所以无法去。',
-        explanation: '-기 때문에는 가장 공식적이고 정중한 표현입니다.'
+        type: 'multiple-choice',
+        question: '시간이 없기 때문에 갈 수 없었다.의 중국어 번역은?（“시간이 없기 때문에 갈 수 없었다.”的中文翻译是？）',
+        options: [
+          { text: '因为没有时间所以无法去。', correct: true },
+          { text: '如果没有时间就无法去。', correct: false },
+          { text: '即使没有时间也无法去。', correct: false },
+          { text: '没有时间之后就无法去。', correct: false }
+        ],
+        explanation: '-기 때문에는 가장 공식적이고 정중한 표현입니다。即-기 때문에是正式且礼貌的原因表达，翻译为“因为……所以……”。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_006',
         type: 'multiple-choice',
-        question: '좋아___좋은 일을 한다.',
+        question: '좋아___좋은 일을 한다. (因为心情好，所以做善事。)',
         options: [
           { text: '서', correct: true },
           { text: '니까', correct: false },
           { text: '도', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '좋다 → 좋아서 (원인/이유)',
+        explanation: '좋다 → 좋아서 (원인/이유)，-아/어서接在形容词좋다后，表示原因，意为“因为心情好”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_007',
         type: 'multiple-choice',
-        question: '다음 중 가장 공식적인 표현은?',
+        question: '다음 중 가장 공식적인 표현은? (下列哪项是最正式的表达？)',
         options: [
           { text: '시간이 없기 때문에', correct: true },
           { text: '시간이 없어서', correct: false },
-          { text: '시간이 없으니까', correct: false }
+          { text: '시간이 없으니까', correct: false },
+          { text: '시간이 없어', correct: false }
         ],
-        explanation: '-기 때문에는 가장 정중하고 공식적인 표현입니다.'
+        explanation: '-기 때문에는 가장 정중하고 공식적인 표현입니다。即-기 때문에是最正式、礼貌的原因表达，其他两个是日常口语表达。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_013_008',
         type: 'multiple-choice',
-        question: '바쁘___까 이따 만나자.',
+        question: '바쁘___까 이따 만나자. (因为忙，稍后见吧。)',
         options: [
           { text: '니', correct: true },
           { text: '서', correct: false },
           { text: '도', correct: false },
           { text: '면', correct: false }
         ],
-        explanation: '바쁘다 → 바쁘니까 (자연스러운 이유)',
+        explanation: '바쁘다 → 바쁘니까 (자연스러운 이유)，-니까接在形容词바쁘다后，表示自然的原因，意为“因为忙”。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1742,91 +1818,105 @@ export const practiceDatabase = {
       {
         id: 'int_014_001',
         type: 'multiple-choice',
-        question: '이걸 도와줄___요?',
+        question: '이걸 도와줄___요? (能帮我一下吗？)',
         options: [
           { text: '래', correct: true },
           { text: '까', correct: false },
           { text: '게', correct: false },
           { text: '니', correct: false }
         ],
-        explanation: '도와주다 → 도와줄래요 (정중한 요청)',
+        explanation: '도와주다 → 도와줄래요 (정중한 요청)，-ㄹ래요接在动词词干后，表示礼貌的请求，意为“能……吗？”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_002',
         type: 'multiple-choice',
-        question: '-아/어 주다는 무엇을 나타내나요?',
+        question: '-아/어 주다는 무엇을 나타내나요? (-아/어 주다 表示什么？)',
         options: [
-          { text: '누군가에게 도움을 청함', correct: true },
-          { text: '직접적인 명령', correct: false }
+          { text: '누군가에게 도움을 청하거나 누군가에게 도움을 주는 행위（请求帮助或提供帮助）', correct: true },
+          { text: '직접적인 명령（直接的命令）', correct: false },
+          { text: '과거의 행동（过去的动作）', correct: false },
+          { text: '미래의 계획（未来的计划）', correct: false }
         ],
-        explanation: '-아/어 주다는 도움을 요청하거나 부탁하는 표현입니다.'
+        explanation: '-아/어 주다는 도움을 요청하거나 부탁하는 표현입니다。同时也可表示为别人提供帮助，是双向的帮助表达。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_003',
         type: 'multiple-choice',
-        question: '물 좀 달___.',
+        question: '물 좀 달___. (给我点水。)',
         options: [
           { text: '라', correct: true },
           { text: '려', correct: false },
           { text: '래', correct: false },
           { text: '로', correct: false }
         ],
-        explanation: '주다 → 달라 (직접적인 요청)',
+        explanation: '주다 → 달라 (직접적인 요청)，-아/어 달라接在动词词干后，表示直接的请求，주다变形成달라，意为“给我……”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_004',
-        type: 'context-judgment',
-        question: '"도와줄래요"가 "해달라"보다 더 정중한가요?',
+        type: 'multiple-choice',
+        question: '"도와줄래요"가 "해달라"보다 더 정중한가요?（“도와줄래요”比“해달라”更礼貌吗？）',
         options: [
-          { text: '네', correct: true },
-          { text: '아니오', correct: false }
+          { text: '네, 훨씬 더 정중합니다（是，礼貌得多）', correct: true },
+          { text: '아니오, 둘 다 같은 정중도입니다（不，两者礼貌程度相同）', correct: false },
+          { text: '아니오, "해달라"가 더 정중합니다（不，“해달라”更礼貌）', correct: false },
+          { text: '네, 하지만 문법적으로 틀린 표현입니다（是，但语法上是错误表达）', correct: false }
         ],
-        explanation: '-아/어 주다가 -아/어 달라보다 더 정중한 표현입니다.'
+        explanation: '-아/어 주다가 -아/어 달라보다 더 정중한 표현입니다。도와줄래요是礼貌的请求，해달라是直接的请求，多用于亲近的人或下级，礼貌程度低。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_005',
-        type: 'translation',
-        question: '번역: 이 문제를 풀어줄 수 있나요?',
-        expectedKorean: '이 문제를 풀어줄 수 있나요',
-        chineseMeaning: '你能帮我解这道题吗？',
-        explanation: '-아/어 주다는 도움의 요청을 나타냅니다.'
+        type: 'multiple-choice',
+        question: '이 문제를 풀어줄 수 있나요?의 중국어 번역은?（“이 문제를 풀어줄 수 있나요?”的中文翻译是？）',
+        options: [
+          { text: '你能帮我解这道题吗？', correct: true },
+          { text: '我能解这道题吗？', correct: false },
+          { text: '你解这道题吧。', correct: false },
+          { text: '我帮你解这道题吧。', correct: false }
+        ],
+        explanation: '-아/어 주다는 도움의 요청을 나타냅니다。该句是请求对方帮忙解题，因此翻译为“你能帮我解这道题吗？”。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_006',
         type: 'multiple-choice',
-        question: '혼자 못해서 좀 봐줄___요?',
+        question: '혼자 못해서 좀 봐줄___요? (我一个人不行，能帮我看看吗？)',
         options: [
           { text: '래', correct: true },
           { text: '까', correct: false },
           { text: '게', correct: false },
           { text: '니', correct: false }
         ],
-        explanation: '보다 → 봐주다 → 봐줄래요',
+        explanation: '보다 → 봐주다 → 봐줄래요，-ㄹ래요接在动词봐주다的词干后，构成礼貌的请求，意为“能帮我看看吗？”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_007',
         type: 'multiple-choice',
-        question: '다음 중 가장 직접적인 요청은?',
+        question: '다음 중 가장 직접적인 요청은? (下列哪项是最直接的请求？)',
         options: [
           { text: '물 좀 달라', correct: true },
-          { text: '물을 좀 줄래요?', correct: false }
+          { text: '물을 좀 줄래요?', correct: false },
+          { text: '물을 좀 주실 수 있나요?', correct: false },
+          { text: '물을 좀 주세요.', correct: false }
         ],
-        explanation: '-아/어 달라가 -아/어 주다보다 더 직접적입니다.'
+        explanation: '-아/어 달라가 -아/어 주다보다 더 직접적입니다。물 좀 달라是最直接的请求，其他选项都是礼貌程度更高的请求表达。',
+        source: 'TOPIK Level 2'
       },
       {
         id: 'int_014_008',
         type: 'multiple-choice',
-        question: '내가 할___해도 돼요?',
+        question: '내가 할___해도 돼요? (我来做可以吗？)',
         options: [
           { text: '래', correct: true },
           { text: '까', correct: false },
           { text: '게', correct: false },
           { text: '니', correct: false }
         ],
-        explanation: '하다 → 할래요 (정중한 요청)',
+        explanation: '하다 → 할래요 (정중한 요청/제안)，-ㄹ래요在此处表示礼貌的提议，意为“我来做可以吗？”，属于请求的延伸用法。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1834,125 +1924,131 @@ export const practiceDatabase = {
       {
         id: 'int_015_001',
         type: 'multiple-choice',
-        question: '나는 한국말을 할 수___요.',
+        question: '나는 한국말을 할 수___요. (我会说韩语。)',
         options: [
           { text: '있어', correct: true },
           { text: '없어', correct: false },
           { text: '있으', correct: false },
           { text: '없으', correct: false }
         ],
-        explanation: '할 수 있다 = can speak',
+        explanation: '할 수 있다 = can speak，-ㄹ/을 수 있다接在动词词干后，表示具备某种能力，할 수 있어요是口语化形式，意为“会说”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_002',
         type: 'multiple-choice',
-        question: '-ㄹ/을 수 있다는 무엇을 나타내나요?',
+        question: '-ㄹ/을 수 있다는 무엇을 나타내나요? (-ㄹ/을 수 있다 表示什么？)',
         options: [
-          { text: '능력이나 가능성', correct: true },
-          { text: '의무', correct: false },
-          { text: '금지', correct: false }
+          { text: '능력이나 가능성（能力或可能性）', correct: true },
+          { text: '의무（义务）', correct: false },
+          { text: '금지（禁止）', correct: false },
+          { text: '명령（命令）', correct: false }
         ],
-        explanation: '-ㄹ/을 수 있다는 할 수 있는 능력을 나타냅니다',
+        explanation: '-ㄹ/을 수 있다는 할 수 있는 능력이나 일이 일어날 가능성을 나타냅니다。既可以表示人的能力，也可以表示事情发生的可能性。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_003',
         type: 'multiple-choice',
-        question: '저는 운전을 할 수___어요.',
+        question: '저는 운전을 할 수___어요. (我不会开车。)',
         options: [
           { text: '없', correct: true },
           { text: '있', correct: false },
           { text: '없어', correct: false },
           { text: '있어', correct: false }
         ],
-        explanation: '할 수 없다 = cannot',
+        explanation: '할 수 없다 = cannot，-ㄹ/을 수 없다接在动词词干后，表示没有能力或可能性，할 수 없어요是口语化形式，此处空格后有어요，因此填없。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_004',
         type: 'multiple-choice',
-        question: '이 영화를 볼 수___요?',
+        question: '이 영화를 볼 수___요? (能看这部电影吗？)',
         options: [
           { text: '있어', correct: true },
           { text: '없어', correct: false },
           { text: '있으', correct: false },
           { text: '없으', correct: false }
         ],
-        explanation: '볼 수 있어요 = can watch',
+        explanation: '볼 수 있어요 = can watch，-ㄹ/을 수 있다的口语化形式，用于询问可能性，意为“能看吗？”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_005',
-        type: 'context-judgment',
-        question: '-ㄹ 수 없다와 -지 못하다는 같은 의미다.',
+        type: 'multiple-choice',
+        question: '-ㄹ 수 없다와 -지 못하다는 같은 의미다. (-ㄹ 수 없다和-지 못하다意思相同吗？)',
         options: [
-          { text: '맞다', correct: true },
-          { text: '틀리다', correct: false }
+          { text: '맞다, 거의 같은 의미입니다（对，意思几乎相同）', correct: true },
+          { text: '틀리다, 전혀 다른 의미입니다（错，意思完全不同）', correct: false },
+          { text: '맞다, 하지만 사용场景이 다릅니다（对，但使用场景不同）', correct: true },
+          { text: '틀리다, 문법적 구조가 다릅니다（错，语法结构不同）', correct: false }
         ],
-        explanation: '두 표현은 모두 할 수 없다는 의미입니다',
+        explanation: '두 표현은 모두 할 수 없다는 의미입니다。-ㄹ 수 없다更侧重能力/可能性的否定，-지 못하다更侧重客观条件的限制，但日常使用中可互换。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_006',
         type: 'multiple-choice',
-        question: '숙제를 다할 수___어.',
+        question: '숙제를 다할 수___어. (能做完作业。)',
         options: [
           { text: '있', correct: true },
           { text: '없', correct: false },
           { text: '있어', correct: false },
           { text: '없어', correct: false }
         ],
-        explanation: '다할 수 있어 = can finish homework',
+        explanation: '다할 수 있어 = can finish homework，-ㄹ/을 수 있다的口语化简略形式，空格后有어，因此填있。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_007',
         type: 'multiple-choice',
-        question: '올바른 형태는?',
+        question: '올바른 형태는? (下列哪项是正确形式？)',
         options: [
           { text: '할 수 있다', correct: true },
           { text: '할 수있다', correct: false },
-          { text: '할수 있다', correct: false }
+          { text: '할수 있다', correct: false },
+          { text: '할수있다', correct: false }
         ],
-        explanation: '수는 반드시 띄어떨어져야 합니다',
+        explanation: '수는 반드시 띄어떨어져야 합니다。即수需要和前面的动词、后面的形容词分开写，这是语法规范。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_008',
         type: 'multiple-choice',
-        question: '그 음식을 먹을 수___요.',
+        question: '그 음식을 먹을 수___요. (能吃那道菜。)',
         options: [
           { text: '있어', correct: true },
           { text: '없어', correct: false },
           { text: '있으', correct: false },
           { text: '없으', correct: false }
         ],
-        explanation: '먹을 수 있어요 = can eat',
+        explanation: '먹을 수 있어요 = can eat，-ㄹ/을 수 있다的口语化形式，意为“能吃”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_009',
         type: 'multiple-choice',
-        question: '우리는 하루에 여러 번 만날 수___어.',
+        question: '우리는 하루에 여러 번 만날 수___어. (我们一天能见面好几次。)',
         options: [
           { text: '있', correct: true },
           { text: '없', correct: false },
           { text: '있어', correct: false },
           { text: '없어', correct: false }
         ],
-        explanation: '만날 수 있어 = can meet',
+        explanation: '만날 수 있어 = can meet，-ㄹ/을 수 있다的口语化简略形式，空格后有어，因此填있。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_015_010',
-        type: 'context-judgment',
-        question: '할 수 없다는 과거형으로 할 수 없었다로 표현할 수 있다.',
+        type: 'multiple-choice',
+        question: '할 수 없다는 과거형으로 할 수 없었다로 표현할 수 있다. (할 수 없다的过去式可以用할 수 없었다表示吗？)',
         options: [
-          { text: '맞다', correct: true },
-          { text: '틀리다', correct: false }
+          { text: '맞다, 정확한 과거형입니다（对，是正确的过去式）', correct: true },
+          { text: '틀리다, 할 수 없었어야 합니다（错，应该是할 수 없었어）', correct: false },
+          { text: '맞다, 하지만 구어체에서는 사용하지 않습니다（对，但口语中不使用）', correct: false },
+          { text: '틀리다, 문법적 오류입니다（错，是语法错误）', correct: false }
         ],
-        explanation: '할 수 없었다 = could not',
+        explanation: '할 수 없었다 = could not，是할 수 없다的标准过去式形式，口语中也可使用할 수 없었어，两者都是正确的。',
         source: 'TOPIK Level 2'
       }
     ],
@@ -1960,76 +2056,79 @@ export const practiceDatabase = {
       {
         id: 'int_016_001',
         type: 'multiple-choice',
-        question: '빨리 가___학교에 갈 수 있어.',
+        question: '빨리 가___학교에 갈 수 있어. (如果快点走，就能到学校。)',
         options: [
           { text: '면', correct: true },
           { text: '서', correct: false },
           { text: '니까', correct: false },
           { text: '도', correct: false }
         ],
-        explanation: '가다 → 가면 = if go',
+        explanation: '가다 → 가면 = if go，-면接在动词词干后，表示条件，意为“如果走”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_016_002',
         type: 'multiple-choice',
-        question: '-면의 의미는?',
+        question: '-면의 의미는? (-면 表示什么含义？)',
         options: [
-          { text: '조건/가정', correct: true },
-          { text: '원인', correct: false },
-          { text: '대비', correct: false }
+          { text: '조건/가정（条件/假设）', correct: true },
+          { text: '원인（原因）', correct: false },
+          { text: '대비（对比）', correct: false },
+          { text: '목적（目的）', correct: false }
         ],
-        explanation: '-면은 "만약...라면"의 조건을 나타냅니다',
+        explanation: '-면은 "만약...라면"의 조건을 나타냅니다。即-면表示假设或条件，意为“如果……的话”。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_016_003',
         type: 'multiple-choice',
-        question: '돈이 많___뭘 할래?',
+        question: '돈이 많___뭘 할래? (如果有钱的话，你想做什么？)',
         options: [
           { text: '으면', correct: true },
           { text: '면', correct: false },
           { text: '서', correct: false },
           { text: '니까', correct: false }
         ],
-        explanation: '많다 → 많으면 = if have much money',
+        explanation: '많다 → 많으면 = if have much money，形容词많다后接-면时，需要先加-으，变成많으면，表示条件。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_016_004',
         type: 'multiple-choice',
-        question: '내가 너라면 그렇게___할 것 같아.',
+        question: '내가 너라면 그렇게___할 것 같아. (如果我是你，我会那么做。)',
         options: [
-          { text: '', correct: true },
+          { text: '아무것도 안', correct: false },
           { text: '도', correct: false },
           { text: '는', correct: false },
-          { text: '만', correct: false }
+          { text: '', correct: true }
         ],
-        explanation: '내가 너라면 그렇게 할 것 같아 = if I were you',
+        explanation: '내가 너라면 그렇게 할 것 같아 = if I were you, I would do that，此处空格不需要填任何词，直接使用그렇게 할 것 같아是正确的。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_016_005',
-        type: 'context-judgment',
-        question: '-면은 문법적 조건만 나타낸다.',
+        type: 'multiple-choice',
+        question: '-면은 문법적 조건만 나타낸다. (-면只表示语法上的条件吗？)',
         options: [
-          { text: '틀리다', correct: true },
-          { text: '맞다', correct: false }
+          { text: '틀리다, 여러 조건을 나타냅니다（错，能表示多种条件）', correct: true },
+          { text: '맞다, 오직 문법적 조건만 나타냅니다（对，只表示语法上的条件）', correct: false },
+          { text: '틀리다, 원인을 나타냅니다（错，表原因）', correct: false },
+          { text: '맞다, 하지만 구어체에서는 사용하지 않습니다（对，但口语中不使用）', correct: false }
         ],
-        explanation: '-면은 사실적, 가정적, 반복적 조건을 모두 나타낼 수 있습니다',
+        explanation: '-면은 사실적，가정적，반복적 조건을 모두 나타낼 수 있습니다。即-면可以表示事实性、假设性、重复性等多种条件。',
         source: 'TOPIK Level 2'
       },
       {
         id: 'int_016_006',
         type: 'multiple-choice',
-        question: '시간이 되___같이 가자.',
+        question: '시간이 되___같이 가자. (如果有时间，一起走吧。)',
         options: [
           { text: '면', correct: true },
           { text: '서', correct: false },
           { text: '니까', correct: false },
           { text: '도', correct: false }
         ],
-        explanation: '되다 → 되면 = if have time',
+        explanation: '되다 → 되면 = if have time，-면接在动词되다后，表示条件，意为“如果有时间”。',
         source: 'TOPIK Level 2'
       },
       {
