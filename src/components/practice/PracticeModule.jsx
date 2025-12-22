@@ -59,7 +59,20 @@ function PracticeModule({ grammar, level }) {
       setIsCorrect(true)
     } else {
       setIsCorrect(false)
-      const correctAnswer = question.correctAnswers?.[0] || question.correctAnswer || question.expectedKorean || ''
+      // 获取正确答案，支持多种题型
+      let correctAnswer = ''
+      if (question.type === 'multiple-choice' || question.type === 'context-judgment') {
+        // 对于选择题，找到正确选项
+        const correctOption = question.options?.find(option => option.correct)
+        correctAnswer = correctOption ? correctOption.text : ''
+      } else if (question.type === 'fill-blank') {
+        // 对于填空题，使用第一个正确答案
+        correctAnswer = question.correctAnswers?.[0] || question.correctAnswer || ''
+      } else if (question.type === 'translation') {
+        // 对于翻译题，显示期望的答案
+        correctAnswer = question.expectedKorean || ''
+      }
+      
       StorageManager.addWrongAnswer(
         question.id,
         grammar.id,
