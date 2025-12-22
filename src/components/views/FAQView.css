@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: "Microsoft YaHei", sans-serif;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .faq-header {
@@ -13,13 +13,13 @@
 
 .faq-header h2 {
   font-size: 28px;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .faq-subtitle {
   font-size: 16px;
-  color: #7f8c8d;
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 
@@ -35,18 +35,20 @@
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #7f8c8d;
+  color: var(--text-secondary);
   font-size: 18px;
 }
 
 .search-input {
   width: 100%;
   padding: 12px 15px 12px 45px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 25px;
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
 }
 
 .search-input:focus {
@@ -63,7 +65,7 @@
 
 .tags-label {
   font-size: 16px;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-right: 10px;
 }
 
@@ -76,15 +78,16 @@
 
 .tag-item {
   padding: 6px 12px;
-  background-color: #ecf0f1;
+  background-color: var(--secondary-color);
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s;
+  color: var(--text-primary);
 }
 
 .tag-item:hover {
-  background-color: #d5dbdb;
+  background-color: var(--border-color);
 }
 
 .tag-active {
@@ -116,32 +119,32 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: var(--secondary-color);
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .faq-question:hover {
-  background-color: #e9ecef;
+  background-color: var(--border-color);
 }
 
 .faq-question h3 {
   font-size: 18px;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin: 0;
 }
 
 .faq-toggle {
   font-size: 24px;
   font-weight: bold;
-  color: #7f8c8d;
+  color: var(--text-secondary);
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: var(--border-color);
   transition: background-color 0.3s;
 }
 
@@ -151,14 +154,15 @@
 
 .faq-answer {
   padding: 20px;
-  border-top: 1px solid #eee;
-  background-color: white;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-light);
 }
 
 .answer-content {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 15px;
+  color: var(--text-primary);
 }
 
 /* 答案标签样式 */
@@ -171,10 +175,10 @@
 
 .answer-tag {
   padding: 4px 10px;
-  background-color: #f1f2f6;
+  background-color: var(--secondary-color);
   border-radius: 15px;
   font-size: 12px;
-  color: #2c3e50;
+  color: var(--text-primary);
   cursor: pointer;
 }
 
@@ -186,13 +190,13 @@
 .answer-examples {
   margin-top: 15px;
   padding: 15px;
-  background-color: #f8f9fa;
+  background-color: var(--secondary-color);
   border-radius: 8px;
 }
 
 .answer-examples h4 {
   font-size: 16px;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
@@ -205,27 +209,27 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 5px;
-  color: #555;
+  color: var(--text-primary);
 }
 
 /* 无结果样式 */
 .faq-empty {
   text-align: center;
   padding: 50px;
-  color: #7f8c8d;
+  color: var(--text-secondary);
   font-size: 16px;
 }
 
 .faq-footer {
   margin-top: 40px;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
 .faq-footer h3 {
   font-size: 20px;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 15px;
   text-align: center;
 }
@@ -252,6 +256,7 @@
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  color: var(--text-primary);
 }
 
 /* 回到顶部按钮 */
