@@ -62,6 +62,28 @@ function WrongAnswersView({ onGrammarSelect, onViewChange }) {
     }
   }
 
+  // 清空所有错题
+  const handleClearAll = () => {
+    if (window.confirm('确定要清空所有错题吗？此操作不可撤销！')) {
+      StorageManager.clearWrongAnswers()
+      setWrongAnswers([])
+    }
+  }
+
+  // 清空当前级别错题
+  const handleClearCurrentLevel = () => {
+    if (window.confirm(`确定要清空${levelNames[selectedLevel || '全部']}级别的错题吗？此操作不可撤销！`)) {
+      if (selectedLevel) {
+        StorageManager.clearWrongAnswersByLevel(selectedLevel)
+        setWrongAnswers(StorageManager.getWrongAnswers())
+      } else {
+        // 如果是全部级别，清空所有错题
+        StorageManager.clearWrongAnswers()
+        setWrongAnswers([])
+      }
+    }
+  }
+
   return (
     <div className="wrong-answers-view">
       <div className="wrong-answers-header">
@@ -87,6 +109,14 @@ function WrongAnswersView({ onGrammarSelect, onViewChange }) {
                 {levelNames[level]} ({groupedByLevel[level].length})
               </button>
             ))}
+            <div className="clear-buttons">
+              <button className="clear-btn" onClick={handleClearCurrentLevel}>
+                清空当前级别
+              </button>
+              <button className="clear-btn clear-all-btn" onClick={handleClearAll}>
+                清空全部
+              </button>
+            </div>
           </div>
 
           <div className="wrong-answers-list">

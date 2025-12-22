@@ -56,8 +56,12 @@ function App() {
     StorageManager.setCurrentLevel(level)
     setSelectedCategory(null)
     setSearchQuery('')
-    setCurrentView('browse')
-    setSelectedGrammar(null)
+    
+    // 只有在特定视图下才切换到浏览视图，保持FAQ等其他视图不变
+    if (['browse', 'favorites', 'wrong-answers', 'tips'].includes(currentView)) {
+      setCurrentView('browse')
+      setSelectedGrammar(null)
+    }
   }
 
   const handleViewChange = (view) => {

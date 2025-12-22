@@ -78,6 +78,18 @@ export class StorageManager {
     return this.getWrongAnswers().filter(w => w.level === level);
   }
 
+  // 清空所有错题
+  static clearWrongAnswers() {
+    localStorage.setItem(STORAGE_KEYS.WRONG_ANSWERS, JSON.stringify([]));
+  }
+
+  // 清空指定级别的错题
+  static clearWrongAnswersByLevel(level) {
+    const wrongAnswers = this.getWrongAnswers();
+    const filtered = wrongAnswers.filter(w => w.level !== level);
+    localStorage.setItem(STORAGE_KEYS.WRONG_ANSWERS, JSON.stringify(filtered));
+  }
+
   // 学习进度管理
   static getLearningProgress() {
     try {

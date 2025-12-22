@@ -30,6 +30,43 @@
   flex-wrap: wrap;
   padding: 15px 0;
   border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+/* 清空按钮 */
+.clear-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.clear-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 14px;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #e9ecef;
+  color: #495057;
+  transform: translateY(-2px);
+}
+
+.clear-all-btn {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.clear-all-btn:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
 }
 
 .filter-btn {
