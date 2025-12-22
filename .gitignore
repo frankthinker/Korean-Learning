@@ -31,3 +31,6 @@ npm-debug.log*
 # Archive files (temporary)
 src/data/archive/
 
+# Wiki folder
+wiki/
+
