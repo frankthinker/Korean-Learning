@@ -62,6 +62,36 @@ function WrongAnswersView({ onGrammarSelect, onViewChange }) {
     }
   }
 
+  // 将问题ID转换为友好的显示格式
+  const formatQuestionId = (questionId, grammarId, level) => {
+    // 解析ID格式，如 beg_001_001
+    if (!questionId || !grammarId) return '未知题目';
+    
+    // 获取语法点信息
+    const grammars = grammarDatabase[level] || [];
+    const grammar = grammars.find(g => g.id === grammarId);
+    
+    if (!grammar) return questionId;
+    
+    // 提取题目编号
+    const parts = questionId.split('_');
+    if (parts.length >= 3) {
+      const grammarNumber = parseInt(parts[1]);
+      const questionNumber = parseInt(parts[2]);
+      
+      // 级别名称映射
+      const levelNamesChinese = {
+        beginner: '初级',
+        intermediate: '中级',
+        advanced: '高级'
+      };
+      
+      return `${levelNamesChinese[level] || level} ${grammar.title || grammar.form} 第${questionNumber}题`;
+    }
+    
+    return questionId;
+  }
+
   // 清空所有错题
   const handleClearAll = () => {
     if (window.confirm('确定要清空所有错题吗？此操作不可撤销！')) {
@@ -128,7 +158,7 @@ function WrongAnswersView({ onGrammarSelect, onViewChange }) {
                     <span className="attempt-badge">
                       {wrongAnswer.attempts} 次错误
                     </span>
-                    <p className="question-text">问题 ID: {wrongAnswer.questionId}</p>
+                    <p className="question-text">{formatQuestionId(wrongAnswer.questionId, wrongAnswer.grammarId, wrongAnswer.level)}</p>
                   </div>
                   <button
                     className="remove-btn"
