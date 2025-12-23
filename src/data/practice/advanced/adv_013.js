@@ -1,69 +1,63 @@
-// -고 난다/-고 나서 (완료 후/이후) 练习题
+// -기는 하지만 (虽然...但是，承认...然而) 练习题
 export const practice_adv_013 = [
-    {
-      id: 'adv_013_001',
-      type: 'fill-blank',
-      question: '밥을 먹고___영화 봤어.',
-      correctAnswers: ['나서'],
-      explanation: '먹고 나서 (식사 후)'
-    },
-    {
-      id: 'adv_013_002',
-      type: 'multiple-choice',
-      question: '-고 나서는 무엇을 나타내나요?',
-      options: [
-        { text: '행동 완료 후', correct: true },
-        { text: '현재 진행', correct: false }
-      ],
-      explanation: '-고 나서는 선행 행동이 완료된 후 다음 행동을 나타냅니다.'
-    },
-    {
-      id: 'adv_013_003',
-      type: 'translation',
-      question: '번역: 공부를 끝내고 나니 피곤했다.',
-      expectedKorean: '공부를 끝내고 나니 피곤했다',
-      chineseMeaning: '完成学习后很累。',
-      explanation: '-고 나니는 -고 나서와 유사하지만 더 자연스럽습니다.'
-    },
-    {
-      id: 'adv_013_004',
-      type: 'fill-blank',
-      question: '일을 마치고___쉬었어.',
-      correctAnswers: ['나서'],
-      explanation: '마치고 나서 (완료 후)'
-    },
-    {
-      id: 'adv_013_005',
-      type: 'context-judgment',
-      question: '"-고 나서"가 시간 순서를 나타내나요?',
-      options: [
-        { text: '네', correct: true },
-        { text: '아니오', correct: false }
-      ],
-      explanation: '-고 나서는 시간 순서와 선행 완료 관계를 나타냅니다.'
-    },
-    {
-      id: 'adv_013_006',
-      type: 'fill-blank',
-      question: '영화가 끝나고___집에 갔어.',
-      correctAnswers: ['나서'],
-      explanation: '끝나고 나서 (영화 종료 후)'
-    },
-    {
-      id: 'adv_013_007',
-      type: 'multiple-choice',
-      question: '-고 난다와 -고 나서의 차이는?',
-      options: [
-        { text: '-고 나서가 더 자연스럽고 일반적', correct: true },
-        { text: '같은 의미', correct: false }
-      ],
-      explanation: '두 표현 모두 완료 후를 나타내지만 -고 나서가 더 흔합니다.'
-    },
-    {
-      id: 'adv_013_008',
-      type: 'fill-blank',
-      question: '씻고___잠자리에 들었어.',
-      correctAnswers: ['나서'],
-      explanation: '씻고 나서 (목욕 후)'
-    }
+  {
+    id: 'adv_013_001',
+    type: 'multiple-choice',
+    question: '맛있기는 하지만___. (虽然好吃，但是...)',
+    options: [
+      { text: '너무 비싸', correct: true },
+      { text: '좋아', correct: false },
+      { text: '괜찮아', correct: false },
+      { text: '자주 먹고 싶어', correct: false }
+    ],
+    explanation: '-기는 하지만是一种让步表达法，用来承认前面的事实但对整体保留意见。结构是"동사/형용사+기는+하지만"。这里承认食物好吃这个事实，但通过转折词"하지만"（但是）引出负面因素（太贵）。这种表达方式显得说话者既肯定某个方面，又基于现实做出理性评判。在日常生活中常用于评价或建议中。'
+  },
+  {
+    id: 'adv_013_002',
+    type: 'multiple-choice',
+    question: '-기는 하지만是什么意思？(-기는 하지만의 의미는?)',
+    options: [
+      { text: '承认前面的内容是事实，但通过转折引出不同观点', correct: true },
+      { text: '表示原因或理由', correct: false },
+      { text: '表示目的或意愿', correct: false },
+      { text: '强调结果或结论', correct: false }
+    ],
+    explanation: '-기는 하지만的核心逻辑是"虽然...但是"。它不是简单的否定，而是一种平衡的评价方式：首先用"-기는 하다"（确实...）表示承认某个事实，然后用"하지만"（但是）转折，提出不同的观点或保留意见。与"-지 않다"（不...）的直接否定不同，-기는 하지만显得更客观、更有分寸。这在学术论文、商务沟通或日常讨论中都很常见。'
+  },
+  {
+    id: 'adv_013_003',
+    type: 'multiple-choice',
+    question: '그 영화를 봤기는 하지만___. (虽然看过那部电影，但是...)',
+    options: [
+      { text: '잘 기억이 안 나', correct: true },
+      { text: '완벽하게 이해했어', correct: false },
+      { text: '매우 인상적이었어', correct: false },
+      { text: '계속 생각난다', correct: false }
+    ],
+    explanation: '"봤기는 하지만"承认说话者确实看过那部电影，但随后"잘 기억이 안 나"（没有很好的印象）转折了。这个例子展示了-기는 하지만如何在日常对话中用来表达"看是看过，但效果或印象不深"的含义。这种表达方式既尊重事实（确实看过），又诚实地表达了实际的体验状态。'
+  },
+  {
+    id: 'adv_013_004',
+    type: 'multiple-choice',
+    question: '그 회사가 큰 기업이기는 하지만___. (那家公司虽然是大企业，但是...)',
+    options: [
+      { text: '인상적이지 않아', correct: true },
+      { text: '아주 작다', correct: false },
+      { text: '무척 유명하다', correct: false },
+      { text: '이윤이 많다', correct: false }
+    ],
+    explanation: '"큰 기업이기는 하지만"首先承认该公司规模大的事实，然后通过"하지만"引出"인상적이지 않아"（没有给人深刻印象）。这个商务语境中的例子显示-기는 하지만如何用于客观评价。即使一家公司规模大（客观事实），也不一定给人好的印象（主观评价）。这体现了这个语法结构在处理复杂评价时的平衡作用。'
+  },
+  {
+    id: 'adv_013_005',
+    type: 'multiple-choice',
+    question: '이 제안이 좋기는 하지만___. (这个建议虽然不错，但是...)',
+    options: [
+      { text: '현실적으로 불가능해', correct: true },
+      { text: '정말 멋있어', correct: false },
+      { text: '바로 실행해야 해', correct: false },
+      { text: '완벽하게 맞아', correct: false }
+    ],
+    explanation: '"좋기는 하지만"首先肯定提议本身有优点，但"현실적으로 불가능해"（现实上不可行）引出了制约因素。这是商务或规划讨论中的常见表达。-기는 하지만在这里的作用是既承认提议的价值，又指出实际执行中的障碍。这种表达方式在团队决策中很重要，因为它避免了简单的否定，反而展示了说话者对提议的尊重和现实的理解。学习者应注意，-기는 하지만不是拒绝，而是在承认和保留之间找到平衡。'
+  }
 ];

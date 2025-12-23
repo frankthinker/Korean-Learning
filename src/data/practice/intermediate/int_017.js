@@ -1,127 +1,63 @@
-// -아/어야 (의무/필요성) 练习题
+// -든지 (无论、或者) 练习题
 export const practice_int_017 = [
-    {
-      id: 'int_017_001',
-      type: 'multiple-choice',
-      question: '약을 먹어___감기가 낫다.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '먹다 → 먹어야 = must take medicine',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_002',
-      type: 'multiple-choice',
-      question: '-아/어야의 의미는?',
-      options: [
-        { text: '의무/필요성', correct: true },
-        { text: '가능성', correct: false },
-        { text: '주의', correct: false }
-      ],
-      explanation: '-아/어야는 ~해야 한다는 의무를 나타냅니다',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_003',
-      type: 'multiple-choice',
-      question: '학교에 가___해요.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '가다 → 가야 해요 = must go to school',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_004',
-      type: 'multiple-choice',
-      question: '이 일을 끝내___돼.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '끝내다 → 끝내야 돼 = must finish this work',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_005',
-      type: 'context-judgment',
-      question: '-아/어야는 과거에도 사용할 수 있다.',
-      options: [
-        { text: '맞다', correct: true },
-        { text: '틀리다', correct: false }
-      ],
-      explanation: '-아/어야 했다 = should have done',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_006',
-      type: 'multiple-choice',
-      question: '열심히 공부해___시험에 합격한다.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '공부하다 → 공부해야',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_007',
-      type: 'multiple-choice',
-      question: '올바른 형태는?',
-      options: [
-        { text: '해야 해요', correct: true },
-        { text: '해야 돼요', correct: true },
-        { text: '해야 해', correct: false }
-      ],
-      explanation: '해야 해요와 해야 돼요는 모두 맞습니다',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_008',
-      type: 'multiple-choice',
-      question: '숙제를 해___돼요.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '하다 → 해야 돼요 = must do homework',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_009',
-      type: 'multiple-choice',
-      question: '규칙을 지켜___한다.',
-      options: [
-        { text: '야', correct: true },
-        { text: '서', correct: false },
-        { text: '도', correct: false },
-        { text: '면', correct: false }
-      ],
-      explanation: '지키다 → 지켜야 한다',
-      source: 'TOPIK Level 2'
-    },
-    {
-      id: 'int_017_010',
-      type: 'context-judgment',
-      question: '-아/어야 한다는 -아/어야 된다보다 더 강한 의무를 나타낸다.',
-      options: [
-        { text: '아니다', correct: true },
-        { text: '맞다', correct: false }
-      ],
-      explanation: '두 표현은 거의 같은 의미의 의무를 나타냅니다',
-      source: 'TOPIK Level 2'
-    }
+  {
+    id: 'int_017_001',
+    type: 'multiple-choice',
+    question: '아침이___저녁이___공부해야 해요.',
+    options: [
+      { text: '든지、든지', correct: true },
+      { text: '면、면', correct: false },
+      { text: '고、고', correct: false },
+      { text: '거나、거나', correct: false }
+    ],
+    explanation: '-든지表示无论什么时候。"아침이든지 저녁이든지"=无论是早上还是晚上。'
+  },
+  {
+    id: 'int_017_002',
+    type: 'multiple-choice',
+    question: '-든지는 무엇을 나타내나요?',
+    options: [
+      { text: '무엇이든지 상관없다는 의미', correct: true },
+      { text: '두 가지 의무', correct: false },
+      { text: '동작의 순서', correct: false },
+      { text: '동작의 조건', correct: false }
+    ],
+    explanation: '-든지表示无论选择哪个都可以，无所谓的意思。'
+  },
+  {
+    id: 'int_017_003',
+    type: 'multiple-choice',
+    question: '누가___와도 상관없어요.',
+    options: [
+      { text: '든지', correct: true },
+      { text: '면', correct: false },
+      { text: '고', correct: false },
+      { text: '니까', correct: false }
+    ],
+    explanation: '-든지表示无论谁。"누가 와든지"=无论谁来。'
+  },
+  {
+    id: 'int_017_004',
+    type: 'multiple-choice',
+    question: '어디든지 가고 싶어요.',
+    options: [
+      { text: '어디든지', correct: true },
+      { text: '어디면', correct: false },
+      { text: '어디고', correct: false },
+      { text: '어디니까', correct: false }
+    ],
+    explanation: '-든지表示无论哪里。"어디든지"=任何地方都可以。'
+  },
+  {
+    id: 'int_017_005',
+    type: 'multiple-choice',
+    question: '무엇을 먹___괜찮아요.',
+    options: [
+      { text: '든지', correct: true },
+      { text: '면', correct: false },
+      { text: '고', correct: false },
+      { text: '니까', correct: false }
+    ],
+    explanation: '-든지表示无论吃什么。"무엇을 먹든지"=吃什么都可以。'
+  }
 ];

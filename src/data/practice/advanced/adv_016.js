@@ -1,69 +1,63 @@
-// -음에도 불구하고/-ㄹ지라도 (양보/비록) 练习题
+// -을/ㄹ지라도 (即使...也，让步) 练习题
 export const practice_adv_016 = [
-    {
-      id: 'adv_016_001',
-      type: 'fill-blank',
-      question: '날씨가 좋지 않음에도 불구하고___.',
-      correctAnswers: ['우리는 갔다'],
-      explanation: '불구하고 (사실에도 불구하고)'
-    },
-    {
-      id: 'adv_016_002',
-      type: 'multiple-choice',
-      question: '-음에도 불구하고는 가장 공식적인가요?',
-      options: [
-        { text: '네', correct: true },
-        { text: '아니오', correct: false }
-      ],
-      explanation: '-음에도 불구하고는 가장 정중하고 공식적인 표현입니다.'
-    },
-    {
-      id: 'adv_016_003',
-      type: 'translation',
-      question: '번역: 어렵을지라도 포기하지 마.',
-      expectedKorean: '어렵을지라도 포기하지 마',
-      chineseMeaning: '即使困难也不要放弃。',
-      explanation: '-ㄹ지라도는 -음에도 불구하고보다 덜 공식적입니다.'
-    },
-    {
-      id: 'adv_016_004',
-      type: 'fill-blank',
-      question: '병에도 불구하고___일했다.',
-      correctAnswers: ['그는'],
-      explanation: '불구하고 (질병이 있었음에도 불구하고)'
-    },
-    {
-      id: 'adv_016_005',
-      type: 'context-judgment',
-      question: '"-ㄹ지라도"가 -음에도 불구하고보다 덜 공식적인가요?',
-      options: [
-        { text: '네', correct: true },
-        { text: '아니오', correct: false }
-      ],
-      explanation: '-ㄹ지라도는 더 자연스럽고 일상적입니다.'
-    },
-    {
-      id: 'adv_016_006',
-      type: 'fill-blank',
-      question: '가난함에도 불구하고___행복했다.',
-      correctAnswers: ['그들은'],
-      explanation: '불구하고 (가난했음에도 불구하고)'
-    },
-    {
-      id: 'adv_016_007',
-      type: 'multiple-choice',
-      question: '다음 중 가장 공식적인 양보 표현은?',
-      options: [
-        { text: '-음에도 불구하고', correct: true },
-        { text: '-ㄹ지라도', correct: false }
-      ],
-      explanation: '-음에도 불구하고는 가장 정중한 표현입니다.'
-    },
-    {
-      id: 'adv_016_008',
-      type: 'fill-blank',
-      question: '피곤할지라도___끝까지 할 거야.',
-      correctAnswers: ['나는'],
-      explanation: '-ㄹ지라도 (피곤하더라도)'
-    }
+  {
+    id: 'adv_016_001',
+    type: 'multiple-choice',
+    question: '비가 오___라도 우리는 가야 해요. (即使下雨我们也要去。)',
+    options: [
+      { text: '을', correct: true },
+      { text: '고', correct: false },
+      { text: '면', correct: false },
+      { text: '서', correct: false }
+    ],
+    explanation: '-을/ㄹ지라도是让步表达，用来承认可能发生的消极条件，但主张这个条件不会改变主句的结论。\"오다\"（来）的未来形是\"올\"，加上\"-지라도\"形成\"올지라도\"（即使来的话）。虽然句子承认可能下雨，但这个事实不能改变\"가야 해요\"（必须去）的决定。-을/ㄹ지라도强调的是意志的坚定性，即使面对不利条件也要坚持某个行为或立场。'
+  },
+  {
+    id: 'adv_016_002',
+    type: 'multiple-choice',
+    question: '-을/ㄹ지라도的语法形式是什么？(-을/ㄹ지라도의 문법 형태는?)',
+    options: [
+      { text: '动词未来式+지라도', correct: true },
+      { text: '动词过去式+지라도', correct: false },
+      { text: '名词+이라도', correct: false },
+      { text: '动词+더라도', correct: false }
+    ],
+    explanation: '-을/ㄹ지라도的形式是\"동사의 미래형+-을/ㄹ+지라도\"。根据动词词干的末尾是否有받침，选择-을或-ㄹ。例如\"오다\"→\"올지라도\"（无受침，用-ㄹ），\"먹다\"→\"먹을지라도\"（有받침，用-을）。与-더라도的区别在于，-을/ㄹ지라도更多强调\"假设\"和\"让步\"，-더라도更多源于\"实际经历\"或\"实际观察\"。理解这个形式差别有助于更准确地选择合适的让步表达。'
+  },
+  {
+    id: 'adv_016_003',
+    type: 'multiple-choice',
+    question: '시험이 어려울지라도___. (即使考试难也...)',
+    options: [
+      { text: '최선을 다해야 한다', correct: true },
+      { text: '포기해도 된다', correct: false },
+      { text: '도움을 청할 수 있다', correct: false },
+      { text: '공부를 멈춰도 괜찮다', correct: false }
+    ],
+    explanation: '\"어렵다\"的未来式是\"어려울\"，加上\"지라도\"形成\"어려울지라도\"。这句话假设考试可能很难（消极条件），但坚持必须尽力（积极结论）。-을/ㄹ지라도在这里构建了一个\"虽然X，但Y\"的论证结构，这在激励或鼓励中很常见。教育或教练的语境中常用这个表达来强调坚持和努力的重要性。'
+  },
+  {
+    id: 'adv_016_004',
+    type: 'multiple-choice',
+    question: '돈이 없을지라도 행복을 찾을___있다. (即使没有钱也能找到幸福。)',
+    options: [
+      { text: '수', correct: true },
+      { text: '거', correct: false },
+      { text: '데', correct: false },
+      { text: '곳', correct: false }
+    ],
+    explanation: '\"없다\"的未来式是\"없을\"，\"찾다\"的可能形是\"찾을 수 있다\"（能找）。整句表达：即使面对\"没有钱\"这个困难条件，仍然\"能够找到幸福\"。-을/ㄹ지라도在这里强调了人类精神的坚韧性和幸福的多元性。这种表达在哲学或励志论述中很常见，用来表达"物质条件不是幸福的唯一决定因素"的观点。'
+  },
+  {
+    id: 'adv_016_005',
+    type: 'multiple-choice',
+    question: '반대를 받을지라도 자신의 꿈을___좇다. (即使受到反对也要追求自己的梦想。)',
+    options: [
+      { text: '계속', correct: true },
+      { text: '절대로', correct: false },
+      { text: '지금', correct: false },
+      { text: '단지', correct: false }
+    ],
+    explanation: '\"받다\"的未来式是\"받을\"，\"반대를 받을지라도\"表示假设可能会遭到反对。\"꿈을 좇다\"（追求梦想）加上副词\"계속\"（继续）强调了坚持的意志。-을/ㄹ지라도在这里表达的是个人的决心和价值观的坚守。即使社会或周围人的反对是可能的，主人公仍然决定继续追求。这个例子反映了独立思考和自我实现的精神。'
+  }
 ];

@@ -1,69 +1,63 @@
-// -거나/-거나 (선택/열거) 练习题
+// -아/어 하다 (使役，让...做) 练习题
 export const practice_adv_015 = [
-    {
-      id: 'adv_015_001',
-      type: 'fill-blank',
-      question: '우유나 주스나___.',
-      correctAnswers: ['마셔'],
-      explanation: '마셔 (선택지)'
-    },
-    {
-      id: 'adv_015_002',
-      type: 'multiple-choice',
-      question: '-거나는 무엇을 나타내나요?',
-      options: [
-        { text: '선택이나 열거', correct: true },
-        { text: '원인', correct: false }
-      ],
-      explanation: '-거나는 두 개 이상의 선택지를 제시합니다.'
-    },
-    {
-      id: 'adv_015_003',
-      type: 'translation',
-      question: '번역: 공부하거나 쉬어.',
-      expectedKorean: '공부하거나 쉬어',
-      chineseMeaning: '要么学习，要么休息。',
-      explanation: '-거나는 선택지를 제시합니다.'
-    },
-    {
-      id: 'adv_015_004',
-      type: 'fill-blank',
-      question: '가거나___거나 빨리 결정하세요.',
-      correctAnswers: ['오'],
-      explanation: '가거나 오거나 (선택)'
-    },
-    {
-      id: 'adv_015_005',
-      type: 'context-judgment',
-      question: '"-거나"가 두 개 이상의 선택지를 제시하나요?',
-      options: [
-        { text: '네', correct: true },
-        { text: '아니오', correct: false }
-      ],
-      explanation: '-거나는 다양한 선택지를 제시합니다.'
-    },
-    {
-      id: 'adv_015_006',
-      type: 'fill-blank',
-      question: '일하거나___거나 선택해.',
-      correctAnswers: ['노'],
-      explanation: '일하거나 놀거나 (선택)'
-    },
-    {
-      id: 'adv_015_007',
-      type: 'multiple-choice',
-      question: '다음 중 -거나의 올바른 사용은?',
-      options: [
-        { text: '가거나 오거나 결정하세요', correct: true },
-        { text: '간거나 왔거나 결정하세요', correct: false }
-      ],
-      explanation: '동사의 현재 형태 + 거나를 사용합니다.'
-    },
-    {
-      id: 'adv_015_008',
-      type: 'fill-blank',
-      question: '이것을 하거나___거나 상관없어.',
-      correctAnswers: ['말'],
-      explanation: '하거나 말거나 (선택)'
-    }
+  {
+    id: 'adv_015_001',
+    type: 'multiple-choice',
+    question: '아이가 엄마를 웃게___해요. (孩子让妈妈笑。)',
+    options: [
+      { text: '하', correct: true },
+      { text: '하는', correct: false },
+      { text: '하고', correct: false },
+      { text: '했', correct: false }
+    ],
+    explanation: '-아/어 하다是使役句的常见结构，表示\"使某人做某事\"或\"让某人处于某种状态\"。构成是\"형용사+게+하다\" 或\"동사+게+하다\"。这里\"웃다\"（笑）变成\"웃게\"（使之笑），加上\"하다\"形成使役关系。句子表示孩子作为主体，通过某种行为使得妈妈（宾语）笑了。与被动句\"엄마가 아이 때문에 웃다\"（妈妈因为孩子而笑）不同，-아/어 하다强调的是主动的因果关系和意图性。'
+  },
+  {
+    id: 'adv_015_002',
+    type: 'multiple-choice',
+    question: '-아/어 하다在什么情况下主要使用？(-아/어 하다는 주로 어떤 상황에서 사용되나요?)',
+    options: [
+      { text: '某人或某事使得另一个人产生某种状态或动作时', correct: true },
+      { text: '某人做他想做的事时', correct: false },
+      { text: '表示过去的习惯性行动时', correct: false },
+      { text: '表示条件或假设时', correct: false }
+    ],
+    explanation: '-아/어 하다的核心功能是表达\"使役\"关系，即\"A使B做X\"或\"A让B处于Y状态\"。这在语言学上被称为\"causative\"（使役）。形式上，它要求四个成分：主体（谁）、宾语（谁被影响）、动作/状态（发生了什么）和助动词하다。与单纯的\"하다\"不同，-아/어 하다引入了新的参与者（宾语）和新的逻辑关系。这对于描述人与人之间或事物之间的影响关系至关重要。'
+  },
+  {
+    id: 'adv_015_003',
+    type: 'multiple-choice',
+    question: '선생님이 학생들을 생각하게___했어요. (老师让学生们思考。)',
+    options: [
+      { text: '하', correct: true },
+      { text: '하는', correct: false },
+      { text: '하면', correct: false },
+      { text: '했는', correct: false }
+    ],
+    explanation: '\"생각하다\"（思考）变成\"생각하게\"加上\"하다\"构成使役。这是教育语境中的典型表达，突出教师的主动角色。学生们的思考是由教师的教学活动直接引发的。这个例子展示了-아/어 하다在教育或管理中的应用，用来描述上位者（如老师）如何通过自己的行动影响下位者（学生）的思维或行为。'
+  },
+  {
+    id: 'adv_015_004',
+    type: 'multiple-choice',
+    question: '이 장면이 관객들을 감동하게___하는 영화다. (这部电影通过这个场景让观众感动。)',
+    options: [
+      { text: '하', correct: true },
+      { text: '하고', correct: false },
+      { text: '했', correct: false },
+      { text: '하면', correct: false }
+    ],
+    explanation: '\"감동하다\"（感动）变成\"감동하게 하다\"。这里主语是\"영화\"（电影），它通过特定的场景使观众（宾语）产生感动的情感。这种用法常见于艺术评论或作品分析中。-아/어 하다在文学或影视评论中经常用来描述作品的效果，即创作者的意图如何通过作品传达给观众。这比简单地说\"관객들이 감동했다\"（观众感动了）更具体地指出了因果关系和艺术创意。'
+  },
+  {
+    id: 'adv_015_005',
+    type: 'multiple-choice',
+    question: '부모님의 관심이 부족하면 아이들이 불안하게___된다. (如果父母关注不足，会让孩子变得不安。)',
+    options: [
+      { text: '되', correct: true },
+      { text: '하', correct: false },
+      { text: '하게', correct: false },
+      { text: '지', correct: false }
+    ],
+    explanation: '注意这题中用的是\"되다\"（变成），而非\"하다\"。虽然看起来相似，但\"불안하게 되다\"（变得不安）和\"불안하게 하다\"（使...不安）在意义上有细微差别：前者强调变化过程，后者强调因果制造关系。这个例子展示了-아/어 하다与被动形式或变化形式的区别。-아/어 하다强调的是主体的主动因果影响，是父母的关注不足直接导致孩子的不安感。理解这个细微差别对于准确表达因果关系很重要。'
+  }
 ];
