@@ -15,16 +15,17 @@ function PracticeModule({ grammar, level }) {
   const [completedQuestions, setCompletedQuestions] = useState(0)
 
   // 从数据库加载练习题目
-  const loadQuestionsFromDatabase = () => {
-    // 尝试从数据库获取该语法点的练习题
+  const loadPracticeSet = () => {
     if (grammar && grammar.id && practiceDatabase[level] && practiceDatabase[level][grammar.id]) {
       return practiceDatabase[level][grammar.id]
     }
-    // 如果没有找到，返回空数组（不再生成默认题目）
-    return []
+    return null
   }
 
-  const questions = loadQuestionsFromDatabase()
+  const practiceSet = loadPracticeSet()
+  const practiceMeta = Array.isArray(practiceSet) ? null : practiceSet
+  const questions = practiceMeta ? practiceMeta.questions || [] : (practiceSet || [])
+  const practiceTitle = practiceMeta?.title || '针对性练习'
 
   const handleSubmitAnswer = () => {
     if (!userAnswer.trim()) {
@@ -242,11 +243,26 @@ function PracticeModule({ grammar, level }) {
   return (
     <div className="practice-module">
       <div className="practice-header">
-        <h3>针对性练习</h3>
+        <div className="practice-header-info">
+          <h3>{practiceTitle}</h3>
+          {practiceMeta?.subtitle && (
+            <p className="practice-subtitle">{practiceMeta.subtitle}</p>
+          )}
+        </div>
         <span className="question-counter">
           {currentQuestion + 1}/{questions.length}
         </span>
       </div>
+
+      {practiceMeta?.tags && practiceMeta.tags.length > 0 && (
+        <div className="practice-tags">
+          {practiceMeta.tags.map(tag => (
+            <span key={tag} className="practice-tag-pill">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
 
       <div className="progress-bar-small" style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}></div>
 

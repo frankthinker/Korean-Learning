@@ -13,10 +13,38 @@
   margin-bottom: 10px;
 }
 
+.practice-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .practice-header h3 {
   margin: 0;
   font-size: 20px;
   color: var(--text-primary);
+}
+
+.practice-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.practice-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.practice-tag-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: rgba(35, 128, 238, 0.1);
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .question-counter {
